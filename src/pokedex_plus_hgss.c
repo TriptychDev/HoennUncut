@@ -1955,7 +1955,7 @@ static const struct SearchOptionText sDexSearchTypeOptions[NUMBER_OF_MON_TYPES +
 {
     {gText_DexEmptyString, gText_DexSearchTypeNone},
     {gText_DexEmptyString, gTypeNames[TYPE_NORMAL]},
-    {gText_DexEmptyString, gTypeNames[TYPE_FIGHTING]},
+    {gText_DexEmptyString, gTypeNames[TYPE_RUGGED]},
     {gText_DexEmptyString, gTypeNames[TYPE_FLYING]},
     {gText_DexEmptyString, gTypeNames[TYPE_POISON]},
     {gText_DexEmptyString, gTypeNames[TYPE_GROUND]},
@@ -1990,7 +1990,7 @@ static const u8 sDexSearchTypeIds[NUMBER_OF_MON_TYPES] =
 {
     TYPE_NONE,
     TYPE_NORMAL,
-    TYPE_FIGHTING,
+    TYPE_RUGGED,
     TYPE_FLYING,
     TYPE_POISON,
     TYPE_GROUND,
@@ -4372,7 +4372,7 @@ static void SetSpriteInvisibility(u8 spriteArrayId, bool8 invisible)
 static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES + CONTEST_CATEGORIES_COUNT] =
 {
     [TYPE_NORMAL] = TYPE_ICON_PAL_NUM_0,
-    [TYPE_FIGHTING] = TYPE_ICON_PAL_NUM_0,
+    [TYPE_RUGGED] = TYPE_ICON_PAL_NUM_0,
     [TYPE_FLYING] = TYPE_ICON_PAL_NUM_1,
     [TYPE_POISON] = TYPE_ICON_PAL_NUM_1,
     [TYPE_GROUND] = TYPE_ICON_PAL_NUM_0,

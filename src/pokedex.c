@@ -1381,7 +1381,7 @@ static const struct SearchOptionText sDexSearchTypeOptions[NUMBER_OF_MON_TYPES +
 {
     {gText_DexEmptyString, gText_DexSearchTypeNone},
     {gText_DexEmptyString, gTypeNames[TYPE_NORMAL]},
-    {gText_DexEmptyString, gTypeNames[TYPE_FIGHTING]},
+    {gText_DexEmptyString, gTypeNames[TYPE_RUGGED]},
     {gText_DexEmptyString, gTypeNames[TYPE_FLYING]},
     {gText_DexEmptyString, gTypeNames[TYPE_POISON]},
     {gText_DexEmptyString, gTypeNames[TYPE_GROUND]},
@@ -1416,7 +1416,7 @@ static const u8 sDexSearchTypeIds[NUMBER_OF_MON_TYPES] =
 {
     TYPE_NONE,
     TYPE_NORMAL,
-    TYPE_FIGHTING,
+    TYPE_RUGGED,
     TYPE_FLYING,
     TYPE_POISON,
     TYPE_GROUND,

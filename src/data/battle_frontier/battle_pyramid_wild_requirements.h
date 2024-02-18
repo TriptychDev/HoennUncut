@@ -186,7 +186,7 @@ static const struct BattlePyramidRequirement sBattlePyramidRequirementsByRound[]
     },
     [10] = /* fighting types */
     {
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
     },
     [11] = /* pokemon with weather-altering effects */
     {

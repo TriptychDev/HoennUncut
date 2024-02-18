@@ -91,7 +91,7 @@ SINGLE_BATTLE_TEST("Reflect Type does not affect Pokémon with no types")
     ASSUME(gSpeciesInfo[SPECIES_ARCANINE].types[0] == TYPE_FIRE);
     ASSUME(gSpeciesInfo[SPECIES_ARCANINE].types[1] == TYPE_FIRE);
     ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[0] == TYPE_WATER);
-    ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[1] == TYPE_FIGHTING);
+    ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[1] == TYPE_RUGGED);
     GIVEN {
         PLAYER(SPECIES_ARCANINE);
         OPPONENT(SPECIES_POLIWRATH);
@@ -112,7 +112,7 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's dual types")
     ASSUME(gSpeciesInfo[SPECIES_ARCANINE].types[0] == TYPE_FIRE);
     ASSUME(gSpeciesInfo[SPECIES_ARCANINE].types[1] == TYPE_FIRE);
     ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[0] == TYPE_WATER);
-    ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[1] == TYPE_FIGHTING);
+    ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[1] == TYPE_RUGGED);
     GIVEN {
         PLAYER(SPECIES_ARCANINE);
         OPPONENT(SPECIES_POLIWRATH);
@@ -124,7 +124,7 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's dual types")
         MESSAGE("Arcanine's type changed to match the Foe Poliwrath's!");
     } THEN {
         EXPECT_EQ(player->type1, TYPE_WATER);
-        EXPECT_EQ(player->type2, TYPE_FIGHTING);
+        EXPECT_EQ(player->type2, TYPE_RUGGED);
         EXPECT_EQ(player->type3, TYPE_MYSTERY);
     }
 }

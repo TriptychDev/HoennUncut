@@ -3021,7 +3021,7 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_FIGHTING,
+        .secondaryId = TYPE_RUGGED,
         .flingPower = 90,
     },
 
@@ -3315,7 +3315,7 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_FIGHTING,
+        .secondaryId = TYPE_RUGGED,
         .flingPower = 50,
     },
 
@@ -4173,7 +4173,7 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_FIGHTING,
+        .secondaryId = TYPE_RUGGED,
     },
 
     [ITEM_POISON_GEM] =
@@ -4402,7 +4402,7 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_FIGHTING
+        .secondaryId = TYPE_RUGGED
     },
 
     [ITEM_POISONIUM_Z] =
@@ -6800,7 +6800,7 @@ const struct Item gItems[] =
         .name = _("Chople Berry"),
         .price = 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
-        .holdEffectParam = TYPE_FIGHTING,
+        .holdEffectParam = TYPE_RUGGED,
         .description = sChopleBerryDesc,
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,

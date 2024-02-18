@@ -8,7 +8,7 @@ ASSUMPTIONS
     ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] != TYPE_FLYING);
     // One attack of each type to verify typelessness
     ASSUME(gBattleMoves[MOVE_POUND].type == TYPE_NORMAL);
-    ASSUME(gBattleMoves[MOVE_KARATE_CHOP].type == TYPE_FIGHTING);
+    ASSUME(gBattleMoves[MOVE_KARATE_CHOP].type == TYPE_RUGGED);
     ASSUME(gBattleMoves[MOVE_GUST].type == TYPE_FLYING);
     ASSUME(gBattleMoves[MOVE_POISON_STING].type == TYPE_POISON);
     ASSUME(gBattleMoves[MOVE_EARTHQUAKE].type == TYPE_GROUND);

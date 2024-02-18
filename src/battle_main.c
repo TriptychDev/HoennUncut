@@ -301,7 +301,7 @@ static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 {
     [TYPE_NORMAL] = _("Normal"),
-    [TYPE_FIGHTING] = _("Fight"),
+    [TYPE_RUGGED] = _("Rugged"),
     [TYPE_FLYING] = _("Flying"),
     [TYPE_POISON] = _("Poison"),
     [TYPE_GROUND] = _("Ground"),

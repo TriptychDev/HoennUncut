@@ -36,7 +36,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 50,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 25,
         .secondaryEffectChance = 0,
@@ -425,7 +425,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 30,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -465,7 +465,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .pp = 25,
         #endif
         .effect = EFFECT_RECOIL_IF_MISS,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 95,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -480,7 +480,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_FLINCH_HIT,
         .power = 60,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 85,
         .pp = 15,
         .secondaryEffectChance = 30,
@@ -497,7 +497,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_ACCURACY_DOWN,
         .power = 0,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -1163,7 +1163,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         #endif
         .effect = EFFECT_RECOIL_25,
         .power = 80,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 80,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -1177,7 +1177,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_LOW_KICK,
         .power = 1,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -1192,7 +1192,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_COUNTER,
         .power = 1,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -1212,7 +1212,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_LEVEL_DAMAGE,
         .power = 1,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -1570,7 +1570,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_EARTHQUAKE,
         .power = 100,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -1587,7 +1587,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_OHKO,
         .power = 1,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 30,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -1607,7 +1607,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 60,
         #endif
         .effect = EFFECT_SEMI_INVULNERABLE,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -2207,7 +2207,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_FLINCH_HIT,
         .power = 65,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 85,
         .pp = 20,
         .secondaryEffectChance = 10,
@@ -2412,7 +2412,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .pp = 20,
         #endif
         .effect = EFFECT_RECOIL_IF_MISS,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 90,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -2760,7 +2760,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 50,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 90,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -2984,7 +2984,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_TRIPLE_KICK,
         .power = 10,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 90,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -3210,7 +3210,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_FLAIL,
         .power = 1,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -3282,7 +3282,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 40,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -3386,7 +3386,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_ACCURACY_DOWN_HIT,
         .power = 20,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -3417,7 +3417,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_SPIKES,
         .power = 0,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -3535,7 +3535,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         #endif
         .effect = EFFECT_PROTECT,
         .power = 0,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -3559,7 +3559,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         #endif
         .effect = EFFECT_MULTI_HIT,
         .power = 25,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -3991,7 +3991,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MAGNITUDE,
         .power = 1,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -4007,7 +4007,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_CONFUSE_HIT,
         .power = 100,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 50,
         .pp = 5,
         .secondaryEffectChance = 100,
@@ -4174,7 +4174,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_VITAL_THROW,
         .power = 70,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -4261,7 +4261,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 100,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 80,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -4466,7 +4466,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 20,
         #endif
         .effect = EFFECT_DEFENSE_DOWN_HIT,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 50,
@@ -4737,7 +4737,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_FOCUS_PUNCH,
         .power = 150,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -4974,7 +4974,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_SUPERPOWER,
         .power = 120,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -5022,7 +5022,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_REVENGE,
         .power = 60,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -5037,7 +5037,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_BRICK_BREAK,
         .power = 75,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -5242,7 +5242,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MULTI_HIT,
         .power = 15,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -5375,7 +5375,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MUD_SPORT,
         .power = 0,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -5846,7 +5846,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_SKY_UPPERCUT,
         .power = 85,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 90,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -5869,7 +5869,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .accuracy = 70,
         #endif
         .effect = EFFECT_TRAP,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .pp = 15,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
@@ -6054,7 +6054,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_BULK_UP,
         .power = 0,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -6093,7 +6093,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_SPEED_DOWN_HIT,
         .power = 55,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 95,
         .pp = 15,
         .secondaryEffectChance = 100,
@@ -6408,7 +6408,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 60,
         #endif
         .effect = EFFECT_WAKE_UP_SLAP,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -6424,7 +6424,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HAMMER_ARM,
         .power = 100,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 90,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -6609,7 +6609,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_CLOSE_COMBAT,
         .power = 120,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 100,
@@ -7031,7 +7031,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_PARALYZE_HIT,
         .power = 60,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 30,
@@ -7051,7 +7051,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 90,
         #endif
         .effect = EFFECT_HIT,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -7276,7 +7276,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .pp = 5,
         #endif
         .effect = EFFECT_ABSORB,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -7292,7 +7292,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 40,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -7306,7 +7306,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
         .power = 120,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 70,
         .pp = 5,
         .secondaryEffectChance = 10,
@@ -7357,7 +7357,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
         .power = 90,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 10,
@@ -7556,7 +7556,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_ACCURACY_DOWN_HIT,
         .power = 65,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 85,
         .pp = 10,
         .secondaryEffectChance = 30,
@@ -8465,7 +8465,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 40,
         #endif
         .effect = EFFECT_ALWAYS_CRIT,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -8630,7 +8630,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 60,
         #endif
         .effect = EFFECT_SPEED_DOWN_HIT,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 100,
@@ -8801,7 +8801,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_PROTECT,
         .power = 0,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -8947,7 +8947,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT_SWITCH_TARGET,
         .power = 60,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 90,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -9043,7 +9043,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_FINAL_GAMBIT,
         .power = 1,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -9183,7 +9183,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_BULLDOZE,
         .power = 60,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 100,
@@ -9281,7 +9281,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 80,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 95,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -9350,7 +9350,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         #endif
         .effect = EFFECT_HIT,
         .power = 90,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -9599,7 +9599,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_PSYSHOCK,
         .power = 85,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -9799,7 +9799,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 80,
         #endif
         .effect = EFFECT_TWO_TYPED_MOVE,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 95,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -9818,7 +9818,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MAT_BLOCK,
         .power = 0,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -9862,7 +9862,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_ROTOTILLER,
         .power = 0,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -10700,7 +10700,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_ATTACK_UP_HIT,
         .power = 40,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 100,
@@ -10733,7 +10733,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_SMACK_DOWN,
         .power = 90,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -10751,7 +10751,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT_PREVENT_ESCAPE,
         .power = 90,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -10767,7 +10767,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 90,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -10813,7 +10813,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 120,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 85,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -10866,7 +10866,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         #endif
         .effect = EFFECT_SHORE_UP,
         .power = 0,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_USER,
@@ -11001,7 +11001,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 95,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 95,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -11506,7 +11506,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_STOMPING_TANTRUM,
         .power = 75,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -12106,7 +12106,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_NO_RETREAT,
         .power = 0,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -12188,7 +12188,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_OCTOLOCK,
         .power = 0,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -12268,7 +12268,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_BODY_PRESS,
         .power = 80,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -12577,7 +12577,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_RECHARGE,
         .power = 150,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -12838,7 +12838,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_COACHING,
         .power = 0,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -12902,7 +12902,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_BURN_HIT,
         .power = 70,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 30,
@@ -13041,7 +13041,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_DEFENSE_DOWN_HIT,
         .power = 90,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -13289,7 +13289,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_VICTORY_DANCE,
         .power = 0,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 20,
         .secondaryEffectChance = 100,
@@ -13311,7 +13311,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 100,
         #endif
         .effect = EFFECT_CLOSE_COMBAT,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -13409,7 +13409,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .pp = 15,
         #endif
         .effect = EFFECT_TRIPLE_ARROWS,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .secondaryEffectChance = 100, // 50% Defense down, 30% Flinch. Can be modified in 'SetMoveEffect'
         .target = MOVE_TARGET_SELECTED,
@@ -13505,7 +13505,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .pp = 5,
         #endif
         .effect = EFFECT_BURN_HIT,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 80,
         .secondaryEffectChance = 20,
         .target = MOVE_TARGET_BOTH,
@@ -13589,7 +13589,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_AXE_KICK,
         .power = 120,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 90,
         .pp = 10,
         .secondaryEffectChance = 30,
@@ -13965,7 +13965,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_COLLISION_COURSE,
         .power = 100,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -14333,7 +14333,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_PARALYZE_HIT,
         .power = 100,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 30,
@@ -14684,7 +14684,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_PLACEHOLDER, //EFFECT_UPPER_HAND
         .power = 65,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -14727,7 +14727,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 1,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 1,
         .secondaryEffectChance = 0,
@@ -14766,7 +14766,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 1,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 1,
         .secondaryEffectChance = 0,
@@ -15246,7 +15246,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MAX_MOVE,
         .power = 1,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -15386,7 +15386,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MAX_MOVE,
         .power = 1,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -15527,7 +15527,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -15768,7 +15768,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
-        .type = TYPE_GROUND,
+        .type = TYPE_RUGGED,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 100,
