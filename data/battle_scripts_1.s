@@ -1053,7 +1053,7 @@ BattleScript_SkyDropTurn2:
 	clearsemiinvulnerablebit
 	attackstring
 	clearskydrop BattleScript_SkyDropChangedTarget
-	jumpiftype BS_TARGET, TYPE_FLYING, BattleScript_SkyDropFlyingType
+	jumpiftype BS_TARGET, TYPE_BIRD, BattleScript_SkyDropFlyingType
 	goto BattleScript_HitFromCritCalc
 BattleScript_SkyDropFlyingType:
 	makevisible BS_TARGET

@@ -268,7 +268,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_GUST,
         .power = 40,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 35,
         .secondaryEffectChance = 0,
@@ -285,7 +285,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 60,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 35,
         .secondaryEffectChance = 0,
@@ -328,7 +328,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 70,
         #endif
         .effect = EFFECT_SEMI_INVULNERABLE,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 95,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -1128,7 +1128,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 35,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 35,
         .secondaryEffectChance = 0,
@@ -1143,7 +1143,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 80,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -2102,7 +2102,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MIRROR_MOVE,
         .power = 0,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 0,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -2538,7 +2538,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_TWO_TURNS_ATTACK,
         .power = 140,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 90,
         .pp = 5,
         .secondaryEffectChance = 30,
@@ -3170,7 +3170,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 100,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 95,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -5326,7 +5326,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_ATTACK_DOWN_2,
         .power = 0,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -5620,7 +5620,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 55,
         #endif
         .effect = EFFECT_HIT,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 95,
         .pp = 25,
         .secondaryEffectChance = 0,
@@ -5935,7 +5935,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 60,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 0,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -6071,7 +6071,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_SEMI_INVULNERABLE,
         .power = 85,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 85,
         .pp = 5,
         .secondaryEffectChance = 30,
@@ -6354,7 +6354,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         #endif
         .effect = EFFECT_ROOST,
         .power = 0,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 0,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_USER,
@@ -6525,7 +6525,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_BUG_BITE,
         .power = 60,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 100,
@@ -6545,7 +6545,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         #endif
         .effect = EFFECT_TAILWIND,
         .power = 0,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 0,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_USER,
@@ -7168,7 +7168,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         #endif
         .effect = EFFECT_FLINCH_HIT,
         .power = 75,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 95,
         .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
@@ -7342,7 +7342,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_RECOIL_33,
         .power = 120,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -7650,7 +7650,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_DEFOG,
         .power = 0,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 0,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -7918,7 +7918,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .secondaryEffectChance = 31,
         #endif
         .effect = EFFECT_CONFUSE_HIT,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 20,
         .target = MOVE_TARGET_SELECTED,
@@ -8910,7 +8910,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_SKY_DROP,
         .power = 60,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -8997,7 +8997,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_ACROBATICS,
         .power = 55,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -9497,7 +9497,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .power = 120,
         #endif
         .effect = EFFECT_HURRICANE,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 70,
         .pp = 10,
         .secondaryEffectChance = 30,
@@ -9806,7 +9806,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_PHYSICAL,
-        .argument = TYPE_FLYING,
+        .argument = TYPE_BIRD,
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
         .minimizeDoubleDamage = TRUE,
@@ -10717,7 +10717,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_ABSORB,
         .power = 80,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -10828,7 +10828,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_CLOSE_COMBAT,
         .power = 120,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 100,
@@ -11369,7 +11369,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_BEAK_BLAST,
         .power = 100,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -11787,7 +11787,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_FLINCH_HIT,
         .power = 90,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 95,
         .pp = 15,
         .secondaryEffectChance = 30,
@@ -12886,7 +12886,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 40,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 90,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -13463,7 +13463,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .pp = 5,
         #endif
         .effect = EFFECT_SPEED_DOWN_HIT,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 80,
         .secondaryEffectChance = 30,
         .target = MOVE_TARGET_BOTH,
@@ -14740,7 +14740,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_HIT,
         .power = 1,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 0,
         .pp = 1,
         .secondaryEffectChance = 0,
@@ -15316,7 +15316,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MAX_MOVE,
         .power = 1,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -15684,7 +15684,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
-        .type = TYPE_FLYING,
+        .type = TYPE_BIRD,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 100,

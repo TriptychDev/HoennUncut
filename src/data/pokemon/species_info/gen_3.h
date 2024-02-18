@@ -975,7 +975,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 65,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_6 ? 100 : 90,
         .baseSpDefense = 50,
-        .types = { TYPE_BUG, TYPE_FLYING },
+        .types = { TYPE_BUG, TYPE_BUG },
         .catchRate = 45,
         .expYield = 178,
         .evYield_SpAttack = 3,
@@ -1433,7 +1433,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 30,
         .baseSpDefense = 30,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_NORMAL, TYPE_BIRD },
         .catchRate = 200,
         .expYield = 54,
         .evYield_Speed = 1,
@@ -1481,7 +1481,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 125,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 75 : 50,
         .baseSpDefense = 50,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_NORMAL, TYPE_BIRD },
         .catchRate = 45,
         .expYield = 159,
         .evYield_Speed = 2,
@@ -1530,7 +1530,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 55,
         .baseSpDefense = 30,
-        .types = { TYPE_WATER, TYPE_FLYING },
+        .types = { TYPE_WATER, TYPE_BIRD },
         .catchRate = 190,
         .expYield = 54,
         .evYield_Speed = 1,
@@ -1580,7 +1580,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 65,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 95 : 85,
         .baseSpDefense = 70,
-        .types = { TYPE_WATER, TYPE_FLYING },
+        .types = { TYPE_WATER, TYPE_BIRD },
         .catchRate = 45,
         .expYield = 154,
         .evYield_Defense = 2,
@@ -1965,7 +1965,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             .baseSpeed     = 60,
             .baseSpAttack  = 80,
         #endif
-        .types = { TYPE_BUG, TYPE_FLYING },
+        .types = { TYPE_BUG, TYPE_BUG },
         .catchRate = 75,
         .expYield = 159,
         .evYield_SpAttack = 1,
@@ -2313,7 +2313,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 160,
         .baseSpAttack  = 50,
         .baseSpDefense = 50,
-        .types = { TYPE_BUG, TYPE_FLYING },
+        .types = { TYPE_BUG, TYPE_BUG },
         .catchRate = 120,
         .expYield = 160,
         .evYield_Speed = 2,
@@ -4829,7 +4829,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 40,
         .baseSpDefense = 75,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_NORMAL, TYPE_BIRD },
         .catchRate = 255,
         .expYield = 62,
         .evYield_SpDefense = 1,
@@ -4895,7 +4895,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 80,
         .baseSpAttack  = 70,
         .baseSpDefense = 105,
-        .types = { TYPE_DRAGON, TYPE_FLYING },
+        .types = { TYPE_DRAGON, TYPE_BIRD },
         .expYield = 172,
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_NONE, ABILITY_CLOUD_NINE },
         .cryId = CRY_ALTARIA,
@@ -6242,7 +6242,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 51,
         .baseSpAttack  = 72,
         .baseSpDefense = 87,
-        .types = { TYPE_GRASS, TYPE_FLYING },
+        .types = { TYPE_GRASS, TYPE_GRASS },
         .catchRate = 200,
         .expYield = 161,
         .evYield_HP = 2,
@@ -7173,7 +7173,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 
 #define SALAMENCE_MISC_INFO                                 \
-        .types = { TYPE_DRAGON, TYPE_FLYING },              \
+        .types = { TYPE_DRAGON, TYPE_DRAGON },              \
         .catchRate = 45,                                    \
         .evYield_Attack = 3,                                \
         .itemRare = ITEM_DRAGON_FANG,                       \
@@ -7982,7 +7982,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
 #if P_FAMILY_RAYQUAZA
 #define RAYQUAZA_MISC_INFO                                              \
-        .types = { TYPE_DRAGON, TYPE_FLYING },                          \
+        .types = { TYPE_DRAGON, TYPE_DRAGON },                          \
         .catchRate = 45,                                                \
         .expYield = 306,                                                \
         .evYield_Attack = 2,                                            \

@@ -1105,8 +1105,8 @@ static const u8 sTerrainToType[BATTLE_TERRAIN_COUNT] =
     [BATTLE_TERRAIN_POND]             = TYPE_WATER,
     [BATTLE_TERRAIN_CAVE]             = TYPE_ROCK,
     [BATTLE_TERRAIN_BUILDING]         = TYPE_NORMAL,
-    [BATTLE_TERRAIN_SOARING]          = TYPE_FLYING,
-    [BATTLE_TERRAIN_SKY_PILLAR]       = TYPE_FLYING,
+    [BATTLE_TERRAIN_SOARING]          = TYPE_BIRD,
+    [BATTLE_TERRAIN_SKY_PILLAR]       = TYPE_BIRD,
     [BATTLE_TERRAIN_BURIAL_GROUND]    = TYPE_GHOST,
     [BATTLE_TERRAIN_PUDDLE]           = TYPE_GROUND,
     [BATTLE_TERRAIN_MARSH]            = TYPE_GROUND,
@@ -2116,11 +2116,11 @@ END:
     // of a move that is Super Effective against a Flying-type Pokémon.
     if (gBattleWeather & B_WEATHER_STRONG_WINDS)
     {
-        if ((GetBattlerType(gBattlerTarget, 0) == TYPE_FLYING
+        if ((GetBattlerType(gBattlerTarget, 0) == TYPE_BIRD
          && GetTypeModifier(moveType, GetBattlerType(gBattlerTarget, 0)) >= UQ_4_12(2.0))
-         || (GetBattlerType(gBattlerTarget, 1) == TYPE_FLYING
+         || (GetBattlerType(gBattlerTarget, 1) == TYPE_BIRD
          && GetTypeModifier(moveType, GetBattlerType(gBattlerTarget, 1)) >= UQ_4_12(2.0))
-         || (GetBattlerType(gBattlerTarget, 2) == TYPE_FLYING
+         || (GetBattlerType(gBattlerTarget, 2) == TYPE_BIRD
          && GetTypeModifier(moveType, GetBattlerType(gBattlerTarget, 2)) >= UQ_4_12(2.0)))
         {
             gBattlerAbility = gBattlerTarget;

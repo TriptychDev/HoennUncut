@@ -3063,7 +3063,7 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_FLYING,
+        .secondaryId = TYPE_BIRD,
         .flingPower = 90,
     },
 
@@ -3357,7 +3357,7 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_FLYING,
+        .secondaryId = TYPE_BIRD,
         .flingPower = 50,
     },
 
@@ -4212,7 +4212,7 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_FLYING,
+        .secondaryId = TYPE_BIRD,
     },
 
     [ITEM_PSYCHIC_GEM] =
@@ -4438,7 +4438,7 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_FLYING
+        .secondaryId = TYPE_BIRD
     },
 
     [ITEM_PSYCHIUM_Z] =
@@ -6839,7 +6839,7 @@ const struct Item gItems[] =
         .name = _("Coba Berry"),
         .price = 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
-        .holdEffectParam = TYPE_FLYING,
+        .holdEffectParam = TYPE_BIRD,
         .description = sCobaBerryDesc,
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,

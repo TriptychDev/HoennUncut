@@ -12,7 +12,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 42,
         .baseSpAttack  = 50,
         .baseSpDefense = 50,
-        .types = { TYPE_GRASS, TYPE_FLYING },
+        .types = { TYPE_GRASS, TYPE_BIRD },
         .catchRate = 45,
         .expYield = 64,
         .evYield_HP = 1,
@@ -60,7 +60,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 52,
         .baseSpAttack  = 70,
         .baseSpDefense = 70,
-        .types = { TYPE_GRASS, TYPE_FLYING },
+        .types = { TYPE_GRASS, TYPE_BIRD },
         .catchRate = 45,
         .expYield = 147,
         .evYield_HP = 2,
@@ -485,7 +485,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 65,
         .baseSpAttack  = 30,
         .baseSpDefense = 30,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_NORMAL, TYPE_BIRD },
         .catchRate = 255,
         .expYield = 53,
         .evYield_Attack = 1,
@@ -534,7 +534,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 75,
         .baseSpAttack  = 40,
         .baseSpDefense = 50,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_NORMAL, TYPE_BIRD },
         .catchRate = 120,
         .expYield = 124,
         .evYield_Attack = 2,
@@ -583,7 +583,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 60,
         .baseSpAttack  = 75,
         .baseSpDefense = 75,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_NORMAL, TYPE_BIRD },
         .catchRate = 45,
         .expYield = 218,
         .evYield_Attack = 3,
@@ -1009,7 +1009,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ORICORIO_BAILE] =
     {
         ORICORIO_MISC_INFO,
-        .types = { TYPE_FIRE, TYPE_FLYING },
+        .types = { TYPE_FIRE, TYPE_BIRD },
         .bodyColor = BODY_COLOR_RED,
         .cryId = CRY_ORICORIO_BAILE,
         .description = COMPOUND_STRING(
@@ -1029,7 +1029,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ORICORIO_POM_POM] =
     {
         ORICORIO_MISC_INFO,
-        .types = { TYPE_ELECTRIC, TYPE_FLYING },
+        .types = { TYPE_ELECTRIC, TYPE_BIRD },
         .bodyColor = BODY_COLOR_YELLOW,
         .cryId = CRY_ORICORIO_POM_POM,
         .description = COMPOUND_STRING(
@@ -1049,7 +1049,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ORICORIO_PAU] =
     {
         ORICORIO_MISC_INFO,
-        .types = { TYPE_PSYCHIC, TYPE_FLYING },
+        .types = { TYPE_PSYCHIC, TYPE_BIRD },
         .bodyColor = BODY_COLOR_PINK,
         .cryId = CRY_ORICORIO_PAU,
         .description = COMPOUND_STRING(
@@ -1069,7 +1069,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ORICORIO_SENSU] =
     {
         ORICORIO_MISC_INFO,
-        .types = { TYPE_GHOST, TYPE_FLYING },
+        .types = { TYPE_GHOST, TYPE_BIRD },
         .bodyColor = BODY_COLOR_PURPLE,
         .cryId = CRY_ORICORIO_SENSU,
         .description = COMPOUND_STRING(
@@ -2779,7 +2779,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_SILVALLY_NORMAL]   = SILVALLY_SPECIES_INFO(TYPE_NORMAL, SilvallyNormal),
     [SPECIES_SILVALLY_FIGHTING] = SILVALLY_SPECIES_INFO(TYPE_RUGGED, SilvallyFighting),
-    [SPECIES_SILVALLY_FLYING]   = SILVALLY_SPECIES_INFO(TYPE_FLYING, SilvallyFlying),
+    [SPECIES_SILVALLY_FLYING]   = SILVALLY_SPECIES_INFO(TYPE_BIRD, SilvallyFlying),
     [SPECIES_SILVALLY_POISON]   = SILVALLY_SPECIES_INFO(TYPE_POISON, SilvallyPoison),
     [SPECIES_SILVALLY_GROUND]   = SILVALLY_SPECIES_INFO(TYPE_RUGGED, SilvallyGround),
     [SPECIES_SILVALLY_ROCK]     = SILVALLY_SPECIES_INFO(TYPE_ROCK, SilvallyRock),
@@ -2799,7 +2799,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
 #if P_FAMILY_MINIOR
 #define MINIOR_MISC_INFO(color)                                 \
-        .types = { TYPE_ROCK, TYPE_FLYING },                    \
+        .types = { TYPE_ROCK, TYPE_BIRD },                    \
         .catchRate = 30,                                        \
         .expYield = 154,                                        \
         .evYield_Defense = 1,                                   \
@@ -4029,7 +4029,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 61,
         .baseSpAttack  = 107,
         .baseSpDefense = 101,
-        .types = { TYPE_STEEL, TYPE_FLYING },
+        .types = { TYPE_STEEL, TYPE_BIRD },
         .catchRate = 45,
         .expYield = 257,
         .evYield_Attack = 1,
