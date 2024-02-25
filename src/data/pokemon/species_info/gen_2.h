@@ -3340,7 +3340,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
         #if P_UPDATED_TYPES >= GEN_6
-            .types = { TYPE_FAIRY, TYPE_FAIRY },
+            .types = { TYPE_FAIRY, TYPE_RUGGED },
         #else
             .types = { TYPE_NORMAL, TYPE_NORMAL },
         #endif
