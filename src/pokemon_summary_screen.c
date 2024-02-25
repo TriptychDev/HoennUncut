@@ -824,7 +824,7 @@ static const union AnimCmd sSpriteAnim_TypeFighting[] = {
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TypeFlying[] = {
-    ANIMCMD_FRAME(TYPE_BIRD * 8, 0, FALSE, FALSE),
+    ANIMCMD_FRAME(TYPE_FLYING * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TypePoison[] = {
@@ -958,7 +958,7 @@ static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES + CONTEST_CATEGORIE
 {
     [TYPE_NORMAL] = 13,
     [TYPE_RUGGED] = 13,
-    [TYPE_BIRD] = 14,
+    [TYPE_FLYING] = 14,
     [TYPE_POISON] = 14,
     [TYPE_GROUND] = 13,
     [TYPE_ROCK] = 13,

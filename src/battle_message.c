@@ -2087,7 +2087,7 @@ static const u8 sATypeMove_Table[NUMBER_OF_MON_TYPES][17] =
 {
     [TYPE_NORMAL]   = _("a NORMAL move"),
     [TYPE_RUGGED] = _("a RUGGED move"),
-    [TYPE_BIRD]   = _("a FLYING move"),
+    [TYPE_FLYING]   = _("a FLYING move"),
     [TYPE_POISON]   = _("a POISON move"),
     [TYPE_GROUND]   = _("a GROUND move"),
     [TYPE_ROCK]     = _("a ROCK move"),

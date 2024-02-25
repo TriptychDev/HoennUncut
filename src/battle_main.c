@@ -302,7 +302,7 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 {
     [TYPE_NORMAL] = _("Normal"),
     [TYPE_RUGGED] = _("Rugged"),
-    [TYPE_BIRD] = _("Flying"),
+    [TYPE_FLYING] = _("Flying"),
     [TYPE_POISON] = _("Poison"),
     [TYPE_GROUND] = _("Ground"),
     [TYPE_ROCK] = _("Rock"),
@@ -4678,7 +4678,7 @@ s8 GetMovePriority(u32 battler, u16 move)
 
     if (ability == ABILITY_GALE_WINGS
         && (B_GALE_WINGS < GEN_7 || BATTLER_MAX_HP(battler))
-        && gBattleMoves[move].type == TYPE_BIRD)
+        && gBattleMoves[move].type == TYPE_FLYING)
     {
         priority++;
     }
@@ -5664,7 +5664,7 @@ void SetTypeBeforeUsingMove(u32 move, u32 battlerAtk)
              && gBattleMoves[move].effect != EFFECT_NATURAL_GIFT
              && ((attackerAbility == ABILITY_PIXILATE && (ateType = TYPE_FAIRY))
                  || (attackerAbility == ABILITY_REFRIGERATE && (ateType = TYPE_ICE))
-                 || (attackerAbility == ABILITY_AERILATE && (ateType = TYPE_BIRD))
+                 || (attackerAbility == ABILITY_AERILATE && (ateType = TYPE_FLYING))
                  || ((attackerAbility == ABILITY_GALVANIZE) && (ateType = TYPE_ELECTRIC))
                 )
              )
