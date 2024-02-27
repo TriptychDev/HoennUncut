@@ -5441,7 +5441,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #if P_FAMILY_GEODUDE
 #define KANTONIAN_GEODUDE_FAMILY_INFO                                       \
-        .types = { TYPE_ROCK, TYPE_RUGGED },                                \
+        /*.types = { TYPE_ROCK, TYPE_RUGGED },*/                            \
         .itemRare = ITEM_EVERSTONE,                                         \
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SAND_VEIL }
 
@@ -5454,6 +5454,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_BROWN
 
 #define GEODUDE_MISC_INFO                                   \
+        .types = { TYPE_ROCK, TYPE_ROCK },                 \
         .baseHP        = 40,                                \
         .baseAttack    = 80,                                \
         .baseDefense   = 100,                               \
@@ -5477,6 +5478,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         GEODUDE_FAMILY_MISC_INFO
 
 #define GRAVELER_MISC_INFO                                  \
+        .types = { TYPE_ROCK, TYPE_ROCK },                 \
         .baseHP        = 55,                                \
         .baseAttack    = 95,                                \
         .baseDefense   = 115,                               \
@@ -5502,6 +5504,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #define GOLEM_ATTACK (P_UPDATED_STATS >= GEN_6 ? 120 : 110)
 
 #define GOLEM_MISC_INFO                                 \
+        .types = { TYPE_ROCK, TYPE_RUGGED },             \
         .baseHP        = 80,                            \
         .baseAttack    = GOLEM_ATTACK,                  \
         .baseDefense   = 130,                           \
@@ -6460,7 +6463,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 75,
         .baseSpAttack  = 35,
         .baseSpDefense = 35,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 190,
         .expYield = 62,
         .evYield_Attack = 1,
@@ -6511,7 +6514,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = P_UPDATED_STATS >= GEN_7 ? 110 : 100,
         .baseSpAttack  = 60,
         .baseSpDefense = 60,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_NORMAL, TYPE_RUGGED },
         .catchRate = 45,
         .expYield = 165,
         .evYield_Attack = 2,

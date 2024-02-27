@@ -2166,7 +2166,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_WOOPER] =
     {
         WOOPER_MISC_INFO,
-        .types = { TYPE_WATER, TYPE_RUGGED },
+        .types = { TYPE_WATER, TYPE_WATER },
         .abilities = { ABILITY_DAMP, ABILITY_WATER_ABSORB, ABILITY_UNAWARE },
         .bodyColor = BODY_COLOR_BLUE,
         .categoryName = _("Water Fish"),
@@ -3340,7 +3340,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
         #if P_UPDATED_TYPES >= GEN_6
-            .types = { TYPE_FAIRY, TYPE_RUGGED },
+            .types = { TYPE_FAIRY, TYPE_NORMAL },
         #else
             .types = { TYPE_NORMAL, TYPE_NORMAL },
         #endif
@@ -4197,7 +4197,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 30,
         .baseSpDefense = 30,
-        .types = { TYPE_ICE, TYPE_RUGGED },
+        .types = { TYPE_ICE, TYPE_ICE },
         .catchRate = 225,
         .expYield = 50,
         .evYield_Attack = 1,
@@ -5440,7 +5440,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 51,
         .baseSpAttack  = 65,
         .baseSpDefense = 70,
-        .types = { TYPE_ROCK, TYPE_RUGGED },
+        .types = { TYPE_STEEL, TYPE_RUGGED },
         .catchRate = 45,
         .expYield = 144,
         .evYield_Attack = 2,
@@ -5481,7 +5481,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 
 #define TYRANITAR_MISC_INFO                                     \
-        .types = { TYPE_ROCK, TYPE_DARK },                      \
+        .types = { TYPE_RUGGED, TYPE_DARK },                      \
         .catchRate = 45,                                        \
         .evYield_Attack = 3,                                    \
         .genderRatio = PERCENT_FEMALE(50),                      \
