@@ -113,7 +113,7 @@ static const struct MenuInfoIcon sMenuInfoIcons[] =
 {   // { width, height, offset }
     { 12, 12, 0x00 },  // Unused
     [TYPE_NORMAL + 1]   = { 32, 12, 0x20 },
-    [TYPE_RUGGED + 1] = { 32, 12, 0x64 },
+    [TYPE_RUGGED + 1]   = { 32, 12, 0x64 },
     [TYPE_FLYING + 1]   = { 32, 12, 0x60 },
     [TYPE_POISON + 1]   = { 32, 12, 0x80 },
     [TYPE_GROUND + 1]   = { 32, 12, 0x48 },

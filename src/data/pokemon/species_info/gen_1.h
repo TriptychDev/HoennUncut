@@ -4202,7 +4202,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = { EGG_GROUP_WATER_1, EGG_GROUP_FIELD },
         .abilities = { ABILITY_DAMP, ABILITY_CLOUD_NINE, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Psyduck"),
+        .speciesName = _("Golduck"),
         .cryId = CRY_PSYDUCK,
         .natDexNum = NATIONAL_DEX_PSYDUCK,
         .categoryName = _("Duck"),
@@ -4239,7 +4239,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 95,
         .baseSpDefense = 80,
-        .types = { TYPE_WATER, TYPE_WATER },
+        .types = { TYPE_WATER, TYPE_PSYCHIC },
         .catchRate = 75,
         .expYield = 175,
         .evYield_SpAttack = 2,
@@ -4250,14 +4250,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = { EGG_GROUP_WATER_1, EGG_GROUP_FIELD },
         .abilities = { ABILITY_DAMP, ABILITY_CLOUD_NINE, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Golduck"),
+        .speciesName = _("Psyduck"),
         .cryId = CRY_GOLDUCK,
         .natDexNum = NATIONAL_DEX_GOLDUCK,
         .categoryName = _("Duck"),
         .height = 17,
         .weight = 766,
         .description = COMPOUND_STRING(
-            "A Golduck is an adept swimmer.\n"
+            "A Psyduck is an adept swimmer.\n"
             "It sometimes joins competitive swimmers\n"
             "in training. It uses psychic powers when\n"
             "its forehead shimmers with light."),
@@ -5685,7 +5685,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #if P_FAMILY_PONYTA
 #define KANTONIAN_PONYTA_FAMILY_INFO                                                \
-        .types = { TYPE_FIRE, TYPE_NORMAL },                                          \
+        .types = { TYPE_NORMAL, TYPE_FIRE },                                          \
         .abilities = { ABILITY_RUN_AWAY, ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY },  \
         .bodyColor = BODY_COLOR_YELLOW
 
@@ -7415,7 +7415,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 25,
         .baseSpDefense = 25,
-        .types = { TYPE_WATER, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_WATER },
         .catchRate = 225,
         .expYield = 65,
         .evYield_Attack = 1,
@@ -7462,7 +7462,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 75,                                                            \
         .baseSpAttack  = 50,                                                            \
         .baseSpDefense = 50,                                                            \
-        .types = { TYPE_WATER, TYPE_NORMAL },                                            \
+        .types = { TYPE_NORMAL, TYPE_WATER },                                            \
         .catchRate = 60,                                                                \
         .expYield = 166,                                                                \
         .evYield_Attack = 2,                                                            \
@@ -8421,7 +8421,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 25,
         .baseSpAttack  = 30,
         .baseSpDefense = 30,
-        .types = { TYPE_RUGGED, TYPE_ROCK },
+        .types = { TYPE_ROCK, TYPE_ROCK },
         .catchRate = 120,
         .expYield = 69,
         .evYield_Defense = 1,
@@ -8471,7 +8471,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 40,
         .baseSpAttack  = 45,
         .baseSpDefense = 45,
-        .types = { TYPE_RUGGED, TYPE_ROCK },
+        .types = { TYPE_ROCK, TYPE_ROCK },
         .catchRate = 60,
         .expYield = 170,
         .evYield_Attack = 2,
@@ -8523,7 +8523,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 40,
         .baseSpAttack  = 55,
         .baseSpDefense = 55,
-        .types = { TYPE_RUGGED, TYPE_ROCK },
+        .types = { TYPE_ROCK, TYPE_ROCK },
         .catchRate = 30,
         .expYield = 241,
         .evYield_Attack = 3,
