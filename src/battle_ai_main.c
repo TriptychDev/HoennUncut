@@ -3969,7 +3969,7 @@ static s32 AI_CheckViability(u32 battlerAtk, u32 battlerDef, u32 move, s32 score
         else if (gBattleMons[battlerDef].statStages[STAT_EVASION] > DEFAULT_STAT_STAGE
          || (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GHOST)
          && (HasMoveWithType(battlerAtk, TYPE_NORMAL)
-         || HasMoveWithType(battlerAtk, TYPE_FIGHTING))))
+         || HasMoveWithType(battlerAtk, TYPE_RUGGED))))
             ADJUST_SCORE(2);
         break;
     case EFFECT_MIRACLE_EYE:

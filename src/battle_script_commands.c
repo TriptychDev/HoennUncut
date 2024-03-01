@@ -4144,17 +4144,20 @@ static void Cmd_getexp(void)
             {
                 if (viaExpShare) // at least one mon is getting exp via exp share
                 {
-                    *exp = SAFE_DIV(calculatedExp / 2, viaSentIn);
+                    *exp = SAFE_DIV((calculatedExp * 133) / 100, viaSentIn);
                     if (*exp == 0)
                         *exp = 1;
-
-                    gBattleStruct->expShareExpValue = calculatedExp / 2 / viaExpShare;
+                    //CHANGE: EXP Share yields 75% EXP for Active Battler and 75% EXP for EXP Share holder
+                    //REASON: Buff EXP gain without getting crazy with it, generates 50% more EXP for each Pokemon holding an EXP Share
+                    gBattleStruct->expShareExpValue = calculatedExp / ( 133 / 100 );
                     if (gBattleStruct->expShareExpValue == 0)
                         gBattleStruct->expShareExpValue = 1;
                 }
                 else
                 {
-                    *exp = SAFE_DIV(calculatedExp, viaSentIn);
+                    //CHANGE: All Pokemon Receive 62.5% EXP if they were used in battle and multiple were used
+                    //REASON: Buff EXP gain without getting crazy with it, generates 25% more EXP for each additional Pokemon used
+                    *exp = SAFE_DIV(calculatedExp, ( 160 / 100 ) );
                     if (*exp == 0)
                         *exp = 1;
                     gBattleStruct->expShareExpValue = 0;
@@ -12053,7 +12056,7 @@ static void Cmd_weatherdamage(void)
         if (gBattleWeather & B_WEATHER_SANDSTORM)
         {
             if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ROCK)
-                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GROUND)
+                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_RUGGED)
                 && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_STEEL)
                 && ability != ABILITY_SAND_VEIL
                 && ability != ABILITY_SAND_FORCE

@@ -2166,7 +2166,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_WOOPER] =
     {
         WOOPER_MISC_INFO,
-        .types = { TYPE_WATER, TYPE_GROUND },
+        .types = { TYPE_WATER, TYPE_WATER },
         .abilities = { ABILITY_DAMP, ABILITY_WATER_ABSORB, ABILITY_UNAWARE },
         .bodyColor = BODY_COLOR_BLUE,
         .categoryName = _("Water Fish"),
@@ -2199,7 +2199,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 35,
         .baseSpAttack  = 65,
         .baseSpDefense = 65,
-        .types = { TYPE_WATER, TYPE_GROUND },
+        .types = { TYPE_WATER, TYPE_RUGGED },
         .catchRate = 90,
         .expYield = 151,
         .evYield_HP = 2,
@@ -2244,7 +2244,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_WOOPER_PALDEAN] =
     {
         WOOPER_MISC_INFO,
-        .types = { TYPE_POISON, TYPE_GROUND },
+        .types = { TYPE_POISON, TYPE_RUGGED },
         .abilities = { ABILITY_POISON_POINT, ABILITY_WATER_ABSORB, ABILITY_UNAWARE },
         .bodyColor = BODY_COLOR_BROWN,
         .isPaldeanForm = TRUE,
@@ -2276,7 +2276,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 45,
         .baseSpDefense = 100,
-        .types = { TYPE_POISON, TYPE_GROUND },
+        .types = { TYPE_POISON, TYPE_RUGGED },
         .catchRate = 90,
         .expYield = 151,
         .evYield_HP = 2,
@@ -3235,7 +3235,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 35,
         .baseSpDefense = 65,
-        .types = { TYPE_GROUND, TYPE_FLYING },
+        .types = { TYPE_RUGGED, TYPE_FLYING },
         .catchRate = 60,
         .expYield = 86,
         .evYield_Defense = 1,
@@ -3288,7 +3288,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 95,
         .baseSpAttack  = 45,
         .baseSpDefense = 75,
-        .types = { TYPE_GROUND, TYPE_FLYING },
+        .types = { TYPE_RUGGED, TYPE_FLYING },
         .catchRate = 30,
         .expYield = 179,
         .evYield_Defense = 2,
@@ -3340,7 +3340,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
         #if P_UPDATED_TYPES >= GEN_6
-            .types = { TYPE_FAIRY, TYPE_FAIRY },
+            .types = { TYPE_FAIRY, TYPE_NORMAL },
         #else
             .types = { TYPE_NORMAL, TYPE_NORMAL },
         #endif
@@ -3392,7 +3392,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpAttack  = 60,
         .baseSpDefense = 60,
         #if P_UPDATED_TYPES >= GEN_6
-            .types = { TYPE_FAIRY, TYPE_FAIRY },
+            .types = { TYPE_FAIRY, TYPE_RUGGED },
         #else
             .types = { TYPE_NORMAL, TYPE_NORMAL },
         #endif
@@ -3618,7 +3618,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
 #if P_FAMILY_HERACROSS
 #define HERACROSS_MISC_INFO                                 \
-        .types = { TYPE_BUG, TYPE_FIGHTING },               \
+        .types = { TYPE_BUG, TYPE_RUGGED },               \
         .catchRate = 45,                                    \
         .evYield_Attack = 2,                                \
         .genderRatio = PERCENT_FEMALE(50),                  \
@@ -3824,7 +3824,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_SNEASEL_HISUIAN] =
     {
         SNEASEL_MISC_INFO,
-        .types = { TYPE_FIGHTING, TYPE_POISON },
+        .types = { TYPE_RUGGED, TYPE_POISON },
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_KEEN_EYE, ABILITY_PICKPOCKET },
         .bodyColor = BODY_COLOR_GRAY,
         .weight = 270,
@@ -3858,7 +3858,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 120,
         .baseSpAttack  = 40,
         .baseSpDefense = 80,
-        .types = { TYPE_FIGHTING, TYPE_POISON },
+        .types = { TYPE_RUGGED, TYPE_POISON },
         .catchRate = 20,
         .expYield = 102,
         .evYield_Attack = 2,
@@ -4003,7 +4003,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_GEN_8_CROSS_EVOS
 #define URSALUNA_MISC_INFO                                  \
         .expYield = 275,                                    \
-        .types = { TYPE_GROUND, TYPE_NORMAL },              \
+        .types = { TYPE_RUGGED, TYPE_NORMAL },              \
         .eggCycles = 20,                                    \
         .friendship = STANDARD_FRIENDSHIP,                  \
         .growthRate = GROWTH_MEDIUM_FAST,                   \
@@ -4197,7 +4197,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 30,
         .baseSpDefense = 30,
-        .types = { TYPE_ICE, TYPE_GROUND },
+        .types = { TYPE_ICE, TYPE_ICE },
         .catchRate = 225,
         .expYield = 50,
         .evYield_Attack = 1,
@@ -4245,7 +4245,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 60,
         .baseSpDefense = 60,
-        .types = { TYPE_ICE, TYPE_GROUND },
+        .types = { TYPE_ICE, TYPE_RUGGED },
         .catchRate = 75,
         .expYield = 158,
         .evYield_HP = 1,
@@ -4297,7 +4297,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 80,
         .baseSpAttack  = 70,
         .baseSpDefense = 60,
-        .types = { TYPE_ICE, TYPE_GROUND },
+        .types = { TYPE_ICE, TYPE_RUGGED },
         .catchRate = 50,
         .expYield = 239,
         .evYield_Attack = 3,
@@ -4927,7 +4927,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 40,
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
-        .types = { TYPE_GROUND, TYPE_GROUND },
+        .types = { TYPE_RUGGED, TYPE_RUGGED },
         .catchRate = 120,
         .expYield = 66,
         .evYield_HP = 1,
@@ -4975,7 +4975,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 60,
         .baseSpDefense = 60,
-        .types = { TYPE_GROUND, TYPE_GROUND },
+        .types = { TYPE_RUGGED, TYPE_RUGGED },
         .catchRate = 60,
         .expYield = 175,
         .evYield_Attack = 1,
@@ -5392,7 +5392,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 41,
         .baseSpAttack  = 45,
         .baseSpDefense = 50,
-        .types = { TYPE_ROCK, TYPE_GROUND },
+        .types = { TYPE_ROCK, TYPE_RUGGED },
         .catchRate = 45,
         .expYield = 60,
         .evYield_Attack = 1,
@@ -5440,7 +5440,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 51,
         .baseSpAttack  = 65,
         .baseSpDefense = 70,
-        .types = { TYPE_ROCK, TYPE_GROUND },
+        .types = { TYPE_STEEL, TYPE_RUGGED },
         .catchRate = 45,
         .expYield = 144,
         .evYield_Attack = 2,
@@ -5481,7 +5481,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 
 #define TYRANITAR_MISC_INFO                                     \
-        .types = { TYPE_ROCK, TYPE_DARK },                      \
+        .types = { TYPE_RUGGED, TYPE_DARK },                      \
         .catchRate = 45,                                        \
         .evYield_Attack = 3,                                    \
         .genderRatio = PERCENT_FEMALE(50),                      \

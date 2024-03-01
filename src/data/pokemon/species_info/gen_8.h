@@ -1951,7 +1951,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 46,
         .baseSpAttack  = 35,
         .baseSpDefense = 50,
-        .types = { TYPE_GROUND, TYPE_GROUND },
+        .types = { TYPE_RUGGED, TYPE_RUGGED },
         .catchRate = 255,
         .expYield = 63,
         .evYield_Defense = 1,
@@ -1997,7 +1997,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 71,                                                        \
         .baseSpAttack  = 65,                                                        \
         .baseSpDefense = 70,                                                        \
-        .types = { TYPE_GROUND, TYPE_GROUND },                                      \
+        .types = { TYPE_RUGGED, TYPE_RUGGED },                                      \
         .catchRate = 120,                                                           \
         .expYield = 179,                                                            \
         .evYield_Defense = 2,                                                       \
@@ -2585,7 +2585,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 32,
         .baseSpAttack  = 50,
         .baseSpDefense = 50,
-        .types = { TYPE_FIGHTING, TYPE_FIGHTING },
+        .types = { TYPE_RUGGED, TYPE_RUGGED },
         .catchRate = 180,
         .expYield = 62,
         .evYield_Attack = 1,
@@ -2633,7 +2633,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 42,
         .baseSpAttack  = 70,
         .baseSpDefense = 80,
-        .types = { TYPE_FIGHTING, TYPE_FIGHTING },
+        .types = { TYPE_RUGGED, TYPE_RUGGED },
         .catchRate = 45,
         .expYield = 168,
         .evYield_Attack = 2,
@@ -3369,7 +3369,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 75,
         .baseSpAttack  = 70,
         .baseSpDefense = 60,
-        .types = { TYPE_FIGHTING, TYPE_FIGHTING },
+        .types = { TYPE_RUGGED, TYPE_RUGGED },
         .catchRate = 45,
         .expYield = 165,
         .evYield_Attack = 2,
@@ -4512,7 +4512,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 138,
         .baseSpAttack  = 80,
         .baseSpDefense = 115,
-        .types = { TYPE_FIGHTING, TYPE_FIGHTING },
+        .types = { TYPE_RUGGED, TYPE_RUGGED },
         .expYield = 335,
         .cryId = CRY_ZAMAZENTA_HERO_OF_MANY_BATTLES,
         .weight = 2100,
@@ -4541,7 +4541,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 128,
         .baseSpAttack  = 80,
         .baseSpDefense = P_UPDATED_STATS >= GEN_9 ? 140 : 145,
-        .types = { TYPE_FIGHTING, TYPE_STEEL },
+        .types = { TYPE_RUGGED, TYPE_STEEL },
         .expYield = 360,
         .cryId = CRY_ZAMAZENTA_CROWNED_SHIELD,
         .weight = 7850,
@@ -4660,7 +4660,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 72,
         .baseSpAttack  = 53,
         .baseSpDefense = 50,
-        .types = { TYPE_FIGHTING, TYPE_FIGHTING },
+        .types = { TYPE_RUGGED, TYPE_RUGGED },
         .catchRate = 3,
         .expYield = 77,
         .evYield_Attack = 1,
@@ -4728,7 +4728,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formSpeciesIdTable = sUrshifuFormSpeciesIdTable
 
 #define URSHIFU_SINGLE_STRIKE_STYLE_MISC_INFO       \
-        .types = { TYPE_FIGHTING, TYPE_DARK },      \
+        .types = { TYPE_RUGGED, TYPE_DARK },      \
         .cryId = CRY_URSHIFU_SINGLE_STRIKE_STYLE,   \
         LEARNSETS(UrshifuSingleStrikeStyle),        \
         URSHIFU_MISC_INFO(SingleStrike)
@@ -4788,7 +4788,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #endif //P_GIGANTAMAX_FORMS
 
 #define URSHIFU_RAPID_STRIKE_STYLE_MISC_INFO        \
-        .types = { TYPE_FIGHTING, TYPE_WATER },     \
+        .types = { TYPE_RUGGED, TYPE_WATER },     \
         .cryId = CRY_URSHIFU_RAPID_STRIKE_STYLE,    \
         LEARNSETS(UrshifuRapidStrikeStyle),         \
         URSHIFU_MISC_INFO(RapidStrike)

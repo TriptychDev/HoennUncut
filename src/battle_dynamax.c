@@ -28,7 +28,7 @@ static u8 GetMaxPowerTier(u16 move);
 static const u16 sMaxMoveTable[NUMBER_OF_MON_TYPES] =
 {
     [TYPE_NORMAL] = MOVE_MAX_STRIKE,
-    [TYPE_FIGHTING] = MOVE_MAX_KNUCKLE,
+    [TYPE_RUGGED] = MOVE_MAX_KNUCKLE,
     [TYPE_FLYING] = MOVE_MAX_AIRSTREAM,
     [TYPE_POISON] = MOVE_MAX_OOZE,
     [TYPE_GROUND] = MOVE_MAX_QUAKE,
@@ -62,7 +62,7 @@ static const struct GMaxMove sGMaxMoveTable[] =
     {SPECIES_BUTTERFREE_GIGANTAMAX,                 TYPE_BUG,        MOVE_G_MAX_BEFUDDLE},
     {SPECIES_PIKACHU_GIGANTAMAX,                    TYPE_ELECTRIC,   MOVE_G_MAX_VOLT_CRASH},
     {SPECIES_MEOWTH_GIGANTAMAX,                     TYPE_NORMAL,     MOVE_G_MAX_GOLD_RUSH},
-    {SPECIES_MACHAMP_GIGANTAMAX,                    TYPE_FIGHTING,   MOVE_G_MAX_CHI_STRIKE},
+    {SPECIES_MACHAMP_GIGANTAMAX,                    TYPE_RUGGED,   MOVE_G_MAX_CHI_STRIKE},
     {SPECIES_GENGAR_GIGANTAMAX,                     TYPE_GHOST,      MOVE_G_MAX_TERROR},
     {SPECIES_KINGLER_GIGANTAMAX,                    TYPE_WATER,      MOVE_G_MAX_FOAM_BURST},
     {SPECIES_LAPRAS_GIGANTAMAX,                     TYPE_ICE,        MOVE_G_MAX_RESONANCE},
@@ -371,7 +371,7 @@ u8 GetMaxMovePower(u16 move)
     }
 
     tier = GetMaxPowerTier(move);
-    if (gBattleMoves[move].type == TYPE_FIGHTING
+    if (gBattleMoves[move].type == TYPE_RUGGED
      || gBattleMoves[move].type == TYPE_POISON
      || move == MOVE_MULTI_ATTACK)
     {

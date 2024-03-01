@@ -4,7 +4,7 @@
 // Pokemon types
 #define TYPE_NONE             255
 #define TYPE_NORMAL           0
-#define TYPE_FIGHTING         1
+#define TYPE_RUGGED           1
 #define TYPE_FLYING           2
 #define TYPE_POISON           3
 #define TYPE_GROUND           4

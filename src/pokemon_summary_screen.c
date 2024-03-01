@@ -820,7 +820,7 @@ static const union AnimCmd sSpriteAnim_TypeNormal[] = {
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TypeFighting[] = {
-    ANIMCMD_FRAME(TYPE_FIGHTING * 8, 0, FALSE, FALSE),
+    ANIMCMD_FRAME(TYPE_RUGGED * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TypeFlying[] = {
@@ -957,7 +957,7 @@ const struct SpriteTemplate gSpriteTemplate_MoveTypes =
 static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES + CONTEST_CATEGORIES_COUNT] =
 {
     [TYPE_NORMAL] = 13,
-    [TYPE_FIGHTING] = 13,
+    [TYPE_RUGGED] = 13,
     [TYPE_FLYING] = 14,
     [TYPE_POISON] = 14,
     [TYPE_GROUND] = 13,
