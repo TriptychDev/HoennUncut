@@ -2864,7 +2864,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_VULPIX] =
     {
         VULPIX_MISC_INFO,
-        .types = { TYPE_FIRE, TYPE_FAIRY },
+        .types = { TYPE_FIRE, TYPE_FIRE },
         .itemRare = ITEM_CHARCOAL,
         .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_DROUGHT },
         .bodyColor = BODY_COLOR_BROWN,
@@ -2895,7 +2895,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 100,
         .baseSpAttack  = 81,
         .baseSpDefense = 100,
-        .types = { TYPE_FIRE, TYPE_FAIRY },
+        .types = { TYPE_FIRE, TYPE_FIRE },
         .itemRare = ITEM_CHARCOAL,
         .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_DROUGHT },
         .bodyColor = BODY_COLOR_YELLOW,
