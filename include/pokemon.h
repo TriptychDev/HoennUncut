@@ -119,6 +119,14 @@ struct PokemonSubstruct1
     /*0x08*/ u8 pp[MAX_MON_MOVES];
 }; /* size = 12 */
 
+
+//CHANGE: Take Substructure over to host ability system
+//REASON: Updated Ability system will require much space. EVs are no longer needed due to change to stat calculations, and contests will be cut as well.
+//Notes:    u16 = 65536 Abilities
+//          u16 Ability
+//          u16 Descriptor
+//          Valid Abilities and Descriptors set by Flags in trainer Dex
+//          Unlock flags by conditions
 struct PokemonSubstruct2
 {
     /*0x00*/ u8 hpEV;
@@ -402,6 +410,15 @@ struct SpeciesInfo /*0x8C*/
  /* 0x88 */ const struct Evolution *evolutions;
  /* 0x84 */ const u16 *formSpeciesIdTable;
  /* 0x84 */ const struct FormChange *formChangeTable;
+ //CHANGE:  Delta stats added to base struct
+ //REASON:  Stat adjustments will be scaled by pokemon level. These deltas are the final stat changes seen once the Pokemon reaches the highest adjustment tier.
+ //         As stat changes can be positive or negative, stored as s8.
+            s8 delta_HP;
+            s8 delta_Attack;
+            s8 delta_Defense;
+            s8 delta_SpAttack;
+            s8 delta_SpDefense;
+            s8 delta_Speed;
 };
 
 struct BattleMove

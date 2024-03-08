@@ -359,7 +359,7 @@ struct PokedexListItem
     u16 owned:1;
 };
 
-
+//Need to find room for 
 struct PokemonStats
 {
     u16 species;

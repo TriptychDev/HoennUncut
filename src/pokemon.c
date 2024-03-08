@@ -1377,16 +1377,34 @@ static u16 CalculateBoxMonChecksum(struct BoxPokemon *boxMon)
     return checksum;
 }
 
-#define CALC_STAT(base, iv, ev, statIndex, field)               \
-{                                                               \
-    u8 baseStat = gSpeciesInfo[species].base;                   \
-    s32 n = (((2 * baseStat + iv + ev / 4) * level) / 100) + 5; \
-    u8 nature = GetNature(mon);                                 \
-    n = ModifyStatByNature(nature, n, statIndex);               \
-    if (B_FRIENDSHIP_BOOST == TRUE)                             \
-        n = n + ((n * 10 * friendship) / (MAX_FRIENDSHIP * 100));\
-    SetMonData(mon, field, &n);                                 \
-}
+//CHANGE: Stat Calculation - Removed EVs/IVs, added Delta Stat
+//REASON: Deltas allow scaling of buffs to prevent early game mons from becoming terrors (for example, Beedrill doesn't have a 480 BST until level 50)
+#define CALC_STAT(base, iv, ev, statIndex, field, delta)                                    \
+{                                                                                           \
+    u8 baseStat = gSpeciesInfo[species].base;                                               \
+    u8 nature = GetNature(mon);                                                             \
+    s32 n = 0;                                                                              \
+    if (P_DELTA_STATS == TRUE)                                                              \
+    {                                                                                       \
+        s8 deltaStat = gSpeciesInfo[species].delta;                                         \
+        if( deltaStat < 0 || level > 49 )                                                   \
+        {                                                                                   \
+            n = ( ( ( 2 * ( baseStat + deltaStat ) ) * level) / 100) + 5;                   \
+        }                                                                                   \
+        else                                                                                \
+        {                                                                                   \
+            n = ( ( ( 2 * ( baseStat + ( deltaStat * level ) / 50 ) ) * level) / 100) + 5;  \
+        }                                                                                   \
+    }                                                                                       \
+    else                                                                                    \
+    {                                                                                       \
+        n = (((2 * baseStat + iv + ev / 4) * level) / 100) + 5;                             \
+        n = ModifyStatByNature(nature, n, statIndex);                                       \
+        if (B_FRIENDSHIP_BOOST == TRUE)                                                     \
+            n = n + ((n * 10 * friendship) / (MAX_FRIENDSHIP * 100));                       \
+    }                                                                                       \
+    SetMonData(mon, field, &n);                                                             \
+}                                                                                           
 
 void CalculateMonStats(struct Pokemon *mon)
 {
@@ -1417,8 +1435,22 @@ void CalculateMonStats(struct Pokemon *mon)
     }
     else
     {
-        s32 n = 2 * gSpeciesInfo[species].baseHP + hpIV;
-        newMaxHP = (((n + hpEV / 4) * level) / 100) + level + 10;
+        if(P_DELTA_STATS == TRUE)
+        {
+            if( gSpeciesInfo[species].delta_HP < 0 || level > 49 )
+            {
+                newMaxHP = ((( 2 * ( gSpeciesInfo[species].baseHP + gSpeciesInfo[species].delta_HP ) ) * level ) / 100) + level + 10;
+            }
+            else
+            {
+                newMaxHP = ((( 2 * ( gSpeciesInfo[species].baseHP + ( gSpeciesInfo[species].delta_HP * level ) / 50 ) ) * level ) / 100) + level + 10;
+            }
+        }
+        else
+        {
+            s32 n = 2 * gSpeciesInfo[species].baseHP + hpIV;
+            newMaxHP = (((n + hpEV / 4) * level) / 100) + level + 10;
+        }
     }
 
     gBattleScripting.levelUpHP = newMaxHP - oldMaxHP;
@@ -1427,11 +1459,11 @@ void CalculateMonStats(struct Pokemon *mon)
 
     SetMonData(mon, MON_DATA_MAX_HP, &newMaxHP);
 
-    CALC_STAT(baseAttack, attackIV, attackEV, STAT_ATK, MON_DATA_ATK)
-    CALC_STAT(baseDefense, defenseIV, defenseEV, STAT_DEF, MON_DATA_DEF)
-    CALC_STAT(baseSpeed, speedIV, speedEV, STAT_SPEED, MON_DATA_SPEED)
-    CALC_STAT(baseSpAttack, spAttackIV, spAttackEV, STAT_SPATK, MON_DATA_SPATK)
-    CALC_STAT(baseSpDefense, spDefenseIV, spDefenseEV, STAT_SPDEF, MON_DATA_SPDEF)
+    CALC_STAT(baseAttack, attackIV, attackEV, STAT_ATK, MON_DATA_ATK, delta_Attack)
+    CALC_STAT(baseDefense, defenseIV, defenseEV, STAT_DEF, MON_DATA_DEF, delta_Defense)
+    CALC_STAT(baseSpeed, speedIV, speedEV, STAT_SPEED, MON_DATA_SPEED, delta_Speed)
+    CALC_STAT(baseSpAttack, spAttackIV, spAttackEV, STAT_SPATK, MON_DATA_SPATK, delta_SpAttack)
+    CALC_STAT(baseSpDefense, spDefenseIV, spDefenseEV, STAT_SPDEF, MON_DATA_SPDEF, delta_SpDefense)
 
     if (species == SPECIES_SHEDINJA)
     {

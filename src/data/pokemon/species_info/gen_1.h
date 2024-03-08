@@ -50,6 +50,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Bulbasaur,
         LEARNSETS(Bulbasaur),
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_IVYSAUR}),
+        .delta_HP = 2,
+        .delta_Attack = -1,
+        .delta_Defense = -2,
+        .delta_SpDefense = 2,
     },
 
     [SPECIES_IVYSAUR] =
@@ -99,6 +103,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Ivysaur,
         LEARNSETS(Ivysaur),
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_VENUSAUR}),
+        .delta_HP = 3,
+        .delta_Attack = -2,
+        .delta_Defense = -2,
+        .delta_SpDefense = 4,
     },
 
 #define VENUSAUR_MISC_INFO                                                  \
@@ -154,6 +162,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_H_SHAKE,
         PALETTES(Venusaur),
         ICON(Venusaur, 4),
+        .delta_HP = 5,
+        .delta_Attack = -2,
+        .delta_Defense = -3,
+        .delta_SpDefense = 5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -277,6 +289,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Charmander,
         LEARNSETS(Charmander),
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_CHARMELEON}),
+        .delta_HP = 1,
+        .delta_Attack = 1,
+        .delta_Defense = -1,
+        .delta_SpAttack = -2,
+        .delta_SpDefense = -2,
+        .delta_Speed = 2,
     },
 
     [SPECIES_CHARMELEON] =
@@ -326,6 +344,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Charmeleon,
         LEARNSETS(Charmeleon),
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CHARIZARD}),
+        .delta_HP = 2,
+        .delta_Attack = 1,
+        .delta_Defense = -2,
+        .delta_SpAttack = -3,
+        .delta_SpDefense = -3,
+        .delta_Speed = 4,
     },
 
 #define CHARIZARD_MISC_INFO                                             \
@@ -378,6 +402,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         PALETTES(Charizard),
         ICON(Charizard, 0),
+        .delta_HP = 2,
+        .delta_Attack = 1,
+        .delta_Defense = -3,
+        .delta_SpAttack = -4,
+        .delta_SpDefense = -5,
+        .delta_Speed = 5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -542,6 +572,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Squirtle,
         LEARNSETS(Squirtle),
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_WARTORTLE}),
+        .delta_HP = 1,
+        .delta_Attack = -3,
+        .delta_Defense = 6,
+        .delta_SpDefense = 2,
+        .delta_Speed = -5,
     },
 
     [SPECIES_WARTORTLE] =
@@ -591,6 +626,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Wartortle,
         LEARNSETS(Wartortle),
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BLASTOISE}),
+        .delta_HP = 1,
+        .delta_Attack = -5,
+        .delta_Defense = 10,
+        .delta_SpDefense = 3,
+        .delta_Speed = -8,
     },
 
 #define BLASTOISE_MISC_INFO                                             \
@@ -644,6 +684,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         PALETTES(Blastoise),
         ICON(Blastoise, 2),
+        .delta_HP = 1,
+        .delta_Attack = -8,
+        .delta_Defense = 15,
+        .delta_SpDefense = 5,
+        .delta_Speed = -13,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -768,6 +813,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Caterpie,
         LEARNSETS(Caterpie),
         .evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_METAPOD}),
+        .delta_HP = 6,
+        .delta_Attack = 4,
+        .delta_Defense = 7,
+        .delta_SpAttack = 3,
+        .delta_SpDefense = 2,
     },
 
     [SPECIES_METAPOD] =
@@ -816,6 +866,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Metapod,
         LEARNSETS(Metapod),
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BUTTERFREE}),
+        .delta_HP = 7,
+        .delta_Attack = 3,
+        .delta_Defense = 12,
+        .delta_SpAttack = 4,
+        .delta_SpDefense = 3,
     },
 
 #define BUTTERFREE_MISC_INFO                                                        \
@@ -873,6 +928,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         PALETTES(Butterfree),
         ICON(Butterfree, 0),
+        .delta_HP = 15,
+        .delta_Attack = 10,
+        .delta_Defense = 20,
+        .delta_SpAttack = 25,
+        .delta_SpDefense = 15,
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -953,6 +1013,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Weedle,
         LEARNSETS(Weedle),
         .evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_KAKUNA}),
+        .delta_HP = 4,
+        .delta_Attack = 4,
+        .delta_Defense = 15,
+        .delta_SpAttack = 3,
+        .delta_SpDefense = -3,
+        .delta_Speed = 9,
     },
 
     [SPECIES_KAKUNA] =
@@ -1002,6 +1068,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Kakuna,
         LEARNSETS(Kakuna),
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BEEDRILL}),
+        .delta_HP = 4,
+        .delta_Attack = 3,
+        .delta_Defense = 26,
+        .delta_SpAttack = 3,
+        .delta_SpDefense = -4,
+        .delta_Speed = 7,
     },
 
 #define BEEDRILL_ATTACK (P_UPDATED_STATS >= GEN_6 ? 90 : 80)
@@ -1059,6 +1131,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         PALETTES(Beedrill),
         ICON(Beedrill, 2),
+        .delta_HP = 10,
+        .delta_Attack = 20,
+        .delta_Defense = 40,
+        .delta_SpAttack = 10,
+        .delta_SpDefense = -20,
+        .delta_Speed = 25,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -1147,6 +1225,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Pidgey,
         LEARNSETS(Pidgey),
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_PIDGEOTTO}),
+        .delta_HP = -1,
+        .delta_Attack = 2,
+        .delta_Defense = 2,
+        .delta_SpAttack = 3,
+        .delta_SpDefence = 4,
+        .delta_Speed = -4,
     },
 
     [SPECIES_PIDGEOTTO] =
@@ -1196,6 +1280,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Pidgeotto,
         LEARNSETS(Pidgeotto),
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_PIDGEOT}),
+        .delta_HP = -2,
+        .delta_Attack = 3,
+        .delta_Defense = 3,
+        .delta_SpAttack = 6,
+        .delta_SpDefence = 8,
+        .delta_Speed = -6,
     },
 
 #define PIDGEOT_SPEED (P_UPDATED_STATS >= GEN_6 ? 101 : 91)
@@ -1251,6 +1341,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         PALETTES(Pidgeot),
         ICON(Pidgeot, 0),
+        .delta_HP = -3,
+        .delta_Attack = 5,
+        .delta_Defense = 5,
+        .delta_SpAttack = 10,
+        .delta_SpDefence = 15,
+        .delta_Speed = -11,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -1359,6 +1455,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Rattata, 2),
         LEARNSETS(Rattata),
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RATICATE}),
+        .delta_Attack = 11,
+        .delta_Defense = 6,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 7,
+        .delta_Speed = 6,
     },
 
     [SPECIES_RATICATE] =
@@ -1396,6 +1497,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Raticate),
         ICON(Raticate, 2),
         LEARNSETS(Raticate),
+        .delta_Attack = 24,
+        .delta_Defense = 15,
+        .delta_SpAttack = 15,
+        .delta_SpDefense = 20,
+        .delta_Speed = 13,
     },
 
 #if P_ALOLAN_FORMS
@@ -1519,6 +1625,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Spearow,
         LEARNSETS(Spearow),
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_FEAROW}),
+        .delta_HP = 4,
+        .delta_Attack = 6,
+        .delta_Defense = 3,
+        .delta_SpAttack = 2,
+        .delta_SpDefense = 2,
+        .delta_Speed = 5,
     },
 
     [SPECIES_FEAROW] =
@@ -1569,6 +1681,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Fearow, 0),
         .footprint = gMonFootprint_Fearow,
         LEARNSETS(Fearow),
+        .delta_HP = 10,
+        .delta_Attack = 15,
+        .delta_Defense = 10,
+        .delta_SpAttack = 4,
+        .delta_SpDefense = 4,
+        .delta_Speed = 10,
     },
 #endif //P_FAMILY_SPEAROW
 
@@ -1620,6 +1738,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Ekans,
         LEARNSETS(Ekans),
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARBOK}),
+        .delta_HP = 8,
+        .delta_Attack = 5,
+        .delta_Defense = 5,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 8,
+        .delta_Speed = 7,
     },
 
     [SPECIES_ARBOK] =
@@ -1667,6 +1791,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Arbok, 2),
         .footprint = gMonFootprint_Arbok,
         LEARNSETS(Arbok),
+        .delta_HP = 20,
+        .delta_Attack = 10,
+        .delta_Defense = 11,
+        .delta_SpAttack = 10,
+        .delta_SpDefense = 16,
+        .delta_Speed = 15,
     },
 #endif //P_FAMILY_EKANS
 
@@ -1794,6 +1924,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
                                 {EVO_NONE, 0, SPECIES_RAICHU_ALOLAN}),
+        .delta_HP = 4,
+        .delta_Attack = -5,
+        .delta_Defense = 17,
+        .delta_SpDefense = 3,
+        .delta_Speed = -9,
     },
 
 #if P_COSPLAY_PIKACHU_FORMS
@@ -2139,6 +2274,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Raichu),
         ICON(Raichu, 0),
         LEARNSETS(Raichu),
+        .delta_HP = 10,
+        .delta_Attack = -10,
+        .delta_Defense = 35,
+        .delta_SpDefense = 5,
+        .delta_Speed = -15,
     },
 
 #if P_ALOLAN_FORMS
@@ -2248,6 +2388,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Sandshrew, 2),
         LEARNSETS(Sandshrew),
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SANDSLASH}),
+        .delta_Attack = 3,
+        .delta_Defense = 8,
+        .delta_SpAttack = 2,
+        .delta_SpDefense = 4,
     },
 
     [SPECIES_SANDSLASH] =
@@ -2283,6 +2427,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Sandslash),
         ICON(Sandslash, 2),
         LEARNSETS(Sandslash),
+        .delta_Attack = 5,
+        .delta_Defense = 15,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 10,
     },
 
 #if P_ALOLAN_FORMS
@@ -2409,6 +2557,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_NidoranF,
         LEARNSETS(NidoranF),
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_NIDORINA}),
+        .delta_Attack = -1,
+        .delta_Defense = 3,
+        .delta_SpAttack = 2,
+        .delta_SpDefense = 2,
+        .delta_Speed = 2,
     },
 
     [SPECIES_NIDORINA] =
@@ -2457,6 +2610,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Nidorina,
         LEARNSETS(Nidorina),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_NIDOQUEEN}),
+        .delta_Attack = -1,
+        .delta_Defense = 5,
+        .delta_SpAttack = 3,
+        .delta_SpDefense = 3,
+        .delta_Speed = 3, 
     },
 
     [SPECIES_NIDOQUEEN] =
@@ -2504,6 +2662,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Nidoqueen, 2),
         .footprint = gMonFootprint_Nidoqueen,
         LEARNSETS(Nidoqueen),
+        .delta_Attack = -2,
+        .delta_Defense = 8,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 5,
+        .delta_Speed = 4,
     },
 
     [SPECIES_NIDORAN_M] =
@@ -2552,6 +2715,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_NidoranM,
         LEARNSETS(NidoranM),
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_NIDORINO}),
+        .delta_HP = -1,
+        .delta_Attack = 3,
+        .delta_Defense = 1,
+        .delta_SpAttack = 2,
+        .delta_SpDefense = 2,
     },
 
     [SPECIES_NIDORINO] =
@@ -2600,6 +2768,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Nidorino,
         LEARNSETS(Nidorino),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_NIDOKING}),
+        .delta_HP = -1,
+        .delta_Attack = 5,
+        .delta_Defense = 2,
+        .delta_SpAttack = 3,
+        .delta_SpDefense = 3,
     },
 
     [SPECIES_NIDOKING] =
@@ -2648,6 +2821,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Nidoking, 2),
         .footprint = gMonFootprint_Nidoking,
         LEARNSETS(Nidoking),
+        .delta_HP = -1,
+        .delta_Attack = 8,
+        .delta_Defense = 3,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 5,
     },
 #endif //P_FAMILY_NIDORAN
 
@@ -2758,6 +2936,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Clefairy,
         LEARNSETS(Clefairy),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_CLEFABLE}),
+        .delta_Defense = 1,
+        .delta_SpAttack = 3,
+        .delta_SpDefense = 3,
     },
 
     [SPECIES_CLEFABLE] =
@@ -2807,6 +2988,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Clefable, 0),
         .footprint = gMonFootprint_Clefable,
         LEARNSETS(Clefable),
+        .delta_Defense = 2,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 5,
     },
 #endif //P_FAMILY_CLEFAIRY
 
@@ -2884,6 +3068,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Vulpix, 5),
         LEARNSETS(Vulpix),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_NINETALES}),
+        .delta_HP = 1,
+        .delta_Attack = -2,
+        .delta_SpAttack = 4,
+        .delta_SpDefense = 2,
+        .delta_Speed = -2,
     },
 
     [SPECIES_NINETALES] =
@@ -2914,6 +3103,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Ninetales),
         ICON(Ninetales, 3),
         LEARNSETS(Ninetales),
+        .delta_HP = 2,
+        .delta_Attack = -6,
+        .delta_SpAttack = 9,
+        .delta_SpDefense = 5,
+        .delta_Speed = -5,
     },
 
 #if P_ALOLAN_FORMS
@@ -3082,6 +3276,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Jigglypuff,
         LEARNSETS(Jigglypuff),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_WIGGLYTUFF}),
+        .delta_HP = -11,
+        .delta_Attack = 12,
+        .delta_Defense = 9,
+        .delta_SpAttack = -4,
+        .delta_SpDefense = 10,
+        .delta_Speed = 5,
     },
 
     [SPECIES_WIGGLYTUFF] =
@@ -3131,6 +3331,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Wigglytuff, 0),
         .footprint = gMonFootprint_Wigglytuff,
         LEARNSETS(Wigglytuff),
+        .delta_HP = -20,
+        .delta_Attack = 30,
+        .delta_Defense = 30,
+        .delta_SpAttack = -10,
+        .delta_SpDefense = 30,
+        .delta_Speed = 15,
     },
 #endif //P_FAMILY_JIGGLYPUFF
 
@@ -3184,6 +3390,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Zubat,
         LEARNSETS(Zubat),
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_GOLBAT}),
+        .delta_Attack = -2,
+        .delta_Defense = -2,
+        .delta_SpAttack = -1,
+        .delta_SpDefense = -2,
     },
 
     [SPECIES_GOLBAT] =
@@ -3235,6 +3445,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Golbat,
         LEARNSETS(Golbat),
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_CROBAT}),
+        .delta_Attack = -4,
+        .delta_Defense = -4,
+        .delta_SpAttack = -4,
+        .delta_SpDefense = -4,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -3284,6 +3498,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Crobat, 2),
         .footprint = gMonFootprint_Crobat,
         LEARNSETS(Crobat),
+        .delta_Attack = -5,
+        .delta_Defense = -5,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = -5,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ZUBAT
@@ -3336,6 +3554,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Oddish,
         LEARNSETS(Oddish),
         .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_GLOOM}),
+        .delta_Attack = -3,
+        .delta_Defense = 5,
+        .delta_SpAttack = 3,
+        .delta_SpDefense = 3,
     },
 
     [SPECIES_GLOOM] =
@@ -3388,6 +3610,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Gloom),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VILEPLUME},
                                 {EVO_ITEM, ITEM_SUN_STONE, SPECIES_BELLOSSOM}),
+        .delta_Attack = -3,
+        .delta_Defense = 7,
+        .delta_SpAttack = 4,
+        .delta_SpDefense = 4,
     },
 
     [SPECIES_VILEPLUME] =
@@ -3438,6 +3664,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Vileplume, 0),
         .footprint = gMonFootprint_Vileplume,
         LEARNSETS(Vileplume),
+        .delta_Attack = -5,
+        .delta_Defense = 10,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 5,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -3487,6 +3717,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Bellossom, 1),
         .footprint = gMonFootprint_Bellossom,
         LEARNSETS(Bellossom),
+        .delta_Attack = -5,
+        .delta_Defense = 5,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 5,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ODDISH
@@ -3541,6 +3775,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Paras,
         LEARNSETS(Paras),
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_PARASECT}),
+        .delta_Attack = 8,
+        .delta_Defense = 17,
+        .delta_SpAttack = 8,
+        .delta_SpDefense = 8,
     },
 
     [SPECIES_PARASECT] =
@@ -3592,6 +3830,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Parasect, 0),
         .footprint = gMonFootprint_Parasect,
         LEARNSETS(Parasect),
+        .delta_Attack = 15,
+        .delta_Defense = 35,
+        .delta_SpAttack = 15,
+        .delta_SpDefense = 15,
     },
 #endif //P_FAMILY_PARAS
 
@@ -3643,6 +3885,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Venonat,
         LEARNSETS(Venonat),
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_VENOMOTH}),
+        .delta_Attack = -3,
+        .delta_Defense = 6,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 5,
+        .delta_Speed = 2,
     },
 
     [SPECIES_VENOMOTH] =
@@ -3693,6 +3940,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Venomoth, 2),
         .footprint = gMonFootprint_Venomoth,
         LEARNSETS(Venomoth),
+        .delta_Attack = -5,
+        .delta_Defense = 10,
+        .delta_SpAttack = 15,
+        .delta_SpDefense = 10,
+        .delta_Speed = 5,
     },
 #endif //P_FAMILY_VENONAT
 
@@ -3771,6 +4023,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Diglett, 2),
         LEARNSETS(Diglett),
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO}),
+        .delta_HP = 2,
+        .delta_Attack = 12,
+        .delta_Defense = 5,
+        .delta_SpAttack = 7,
+        .delta_SpDefense = 9,
+        .delta_Speed = 6,
     },
 
     [SPECIES_DUGTRIO] =
@@ -3801,6 +4059,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Dugtrio),
         ICON(Dugtrio, 2),
         LEARNSETS(Dugtrio),
+        .delta_HP = 10,
+        .delta_Attack = 25,
+        .delta_Defense = 15,
+        .delta_SpAttack = 15,
+        .delta_SpDefense = 20,
+        .delta_Speed = 10,
     },
 
 #if P_ALOLAN_FORMS
@@ -3939,6 +4203,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Meowth),
         .formChangeTable = sMeowthFormChangeTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERSIAN}),
+        .delta_HP = 4,
+        .delta_Attack = 2,
+        .delta_Defense = 6,
+        .delta_SpAttack = 4,
+        .delta_SpDefense = 4,
     },
 
     [SPECIES_PERSIAN] =
@@ -3975,6 +4244,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Persian),
         ICON(Persian, 1),
         LEARNSETS(Persian),
+        .delta_HP = 9,
+        .delta_Attack = 4,
+        .delta_Defense = 14,
+        .delta_SpAttack = 9,
+        .delta_SpDefense = 9,
     },
 
 #if P_ALOLAN_FORMS
@@ -4229,6 +4503,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Psyduck,
         LEARNSETS(Psyduck),
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_GOLDUCK}),
+        .delta_Attack = 6,
+        .delta_Defense = 1,
+        .delta_SpAttack = 3,
     },
 
     [SPECIES_GOLDUCK] =
@@ -4276,6 +4553,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Golduck, 0),
         .footprint = gMonFootprint_Golduck,
         LEARNSETS(Golduck),
+        .delta_Attack = 13,
+        .delta_Defense = 2,
+        .delta_SpAttack = 5,
     },
 #endif //P_FAMILY_PSYDUCK
 
@@ -4327,6 +4607,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Mankey,
         LEARNSETS(Mankey),
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PRIMEAPE}),
+        .delta_Attack = 3,
+        .delta_Defense = 4,
+        .delta_SpAttack = 4,
+        .delta_SpDefense = 5,
+        .delta_Speed = 5,
     },
 
     [SPECIES_PRIMEAPE] =
@@ -4375,6 +4660,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Primeape,
         LEARNSETS(Primeape),
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_RAGE_FIST, SPECIES_ANNIHILAPE}),
+        .delta_Attack = 5,
+        .delta_Defense = 10,
+        .delta_SpAttack = 10,
+        .delta_SpDefense = 10,
+        .delta_Speed = 10,
     },
 
 #if P_GEN_9_CROSS_EVOS
@@ -4494,6 +4784,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Growlithe, 3),
         LEARNSETS(Growlithe),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE}),
+        .delta_Attack = -7,
+        .delta_Defense = -2,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = -2,
+        .delta_Speed = 2,
     },
 
     [SPECIES_ARCANINE] =
@@ -4529,6 +4824,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Arcanine),
         ICON(Arcanine, 3),
         LEARNSETS(Arcanine),
+        .delta_Attack = -15,
+        .delta_Defense = -5,
+        .delta_SpAttack = -10,
+        .delta_SpDefense = -5,
+        .delta_Speed = 5,
     },
 
 #if P_HISUIAN_FORMS
@@ -4654,6 +4954,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Poliwag,
         LEARNSETS(Poliwag),
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_POLIWHIRL}),
+        .delta_Attack = -2,
+        .delta_Speed = 2,
     },
 
     [SPECIES_POLIWHIRL] =
@@ -4707,6 +5009,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_POLIWRATH},
                                 {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_POLITOED},
                                 {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_POLITOED}),
+        .delta_Attack = -3,
+        .delta_Speed = 3,
     },
 
     [SPECIES_POLIWRATH] =
@@ -4756,6 +5060,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Poliwrath, 0),
         .footprint = gMonFootprint_Poliwrath,
         LEARNSETS(Poliwrath),
+        .delta_Attack = -5,
+        .delta_Speed = 5,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -4809,6 +5115,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Politoed, 1),
         .footprint = gMonFootprint_Politoed,
         LEARNSETS(Politoed),
+        .delta_Attack = -5,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_POLIWAG
@@ -4861,6 +5168,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Abra,
         LEARNSETS(Abra),
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_KADABRA}),
+        .delta_Attack = -2,
+        .delta_SpDefense = 2,
     },
 
     [SPECIES_KADABRA] =
@@ -4914,6 +5223,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Kadabra),
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ALAKAZAM},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_ALAKAZAM}),
+        .delta_Attack = -3,
+        .delta_SpDefense = 3,
     },
 
 #define ALAKAZAM_SP_DEF (P_UPDATED_STATS >= GEN_6 ? 95 : 85)
@@ -4971,6 +5282,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_GROW_STUTTER,
         PALETTES(Alakazam),
         ICON(Alakazam, 2),
+        .delta_Attack = -5,
+        .delta_SpDefense = 5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -5059,6 +5372,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Machop,
         LEARNSETS(Machop),
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MACHOKE}),
+        .delta_Attack = -6,
+        .delta_Speed = 4,
     },
 
     [SPECIES_MACHOKE] =
@@ -5110,6 +5425,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Machoke),
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MACHAMP},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_MACHAMP}),
+        .delta_Attack = -10,
+        .delta_Speed = 7,
     },
 
 #define MACHAMP_MISC_INFO                                                   \
@@ -5163,6 +5480,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         PALETTES(Machamp),
         ICON(Machamp, 0),
+        .delta_Attack = -15,
+        .delta_Speed = 10,
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -5241,6 +5560,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Bellsprout,
         LEARNSETS(Bellsprout),
         .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_WEEPINBELL}),
+        .delta_HP = 2,
+        .delta_Defense = 5,
+        .delta_SpDefense = 3,
+        .delta_Speed = -7,
     },
 
     [SPECIES_WEEPINBELL] =
@@ -5290,6 +5613,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Weepinbell,
         LEARNSETS(Weepinbell),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VICTREEBEL}),
+        .delta_HP = 4,
+        .delta_Defense = 10,
+        .delta_SpDefense = 6,
+        .delta_Speed = -13,
     },
 
     [SPECIES_VICTREEBEL] =
@@ -5337,6 +5664,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Victreebel, 1),
         .footprint = gMonFootprint_Victreebel,
         LEARNSETS(Victreebel),
+        .delta_HP = 5,
+        .delta_Defense = 15,
+        .delta_SpDefense = 10,
+        .delta_Speed = -20,
     },
 #endif //P_FAMILY_BELLSPROUT
 
@@ -5388,6 +5719,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Tentacool,
         LEARNSETS(Tentacool),
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_TENTACRUEL}),
+        .delta_Attack = -2,
     },
 
     [SPECIES_TENTACRUEL] =
@@ -5436,6 +5768,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Tentacruel, 0),
         .footprint = gMonFootprint_Tentacruel,
         LEARNSETS(Tentacruel),
+        .delta_Attack = -5,
     },
 #endif //P_FAMILY_TENTACOOL
 
@@ -5544,6 +5877,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Geodude, 1),
         LEARNSETS(Geodude),
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GRAVELER}),
+        .delta_HP = 4,
+        .delta_Attack = 3,
     },
 
     [SPECIES_GRAVELER] =
@@ -5568,6 +5903,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Graveler),
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOLEM},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOLEM}),
+        .delta_HP = 6,
+        .delta_Attack = 4,
     },
 
     [SPECIES_GOLEM] =
@@ -5595,6 +5932,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Golem),
         ICON(Golem, 2),
         LEARNSETS(Golem),
+        .delta_HP = 10,
+        .delta_Attack = 5,
     },
 
 #if P_ALOLAN_FORMS
@@ -5763,6 +6102,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Ponyta, 3),
         LEARNSETS(Ponyta),
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RAPIDASH}),
+        .delta_Attack = -4,
     },
 
     [SPECIES_RAPIDASH] =
@@ -5786,6 +6126,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Rapidash),
         ICON(Rapidash, 3),
         LEARNSETS(Rapidash),
+        .delta_Attack = -5,
     },
 
 #define GALARIAN_PONYTA_FAMILY_INFO                                                 \
@@ -5936,6 +6277,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_SLOWBRO},
                                 {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING},
                                 {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING}),
+        .delta_Attack = -3,
+        .delta_SpDefense = 4,
     },
 
     [SPECIES_SLOWBRO] =
@@ -5973,6 +6316,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Slowbro, 0),
         LEARNSETS(Slowbro),
         .formChangeTable = sSlowbroFormChangeTable,
+        .delta_Attack = -5,
+        .delta_SpDefense = 10,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -6010,6 +6355,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Slowking),
         ICON(Slowking, 0),
         LEARNSETS(Slowking),
+        .delta_Attack = -5,
+        .delta_Defense = 5,
+        .delta_SpAttack = 5,
     },
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -6206,6 +6554,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Magnemite,
         LEARNSETS(Magnemite),
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MAGNETON}),
+        .delta_Defense = -2,
     },
 
     [SPECIES_MAGNETON] =
@@ -6257,6 +6606,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Magneton),
         .evolutions = EVOLUTION({EVO_MAPSEC, MAPSEC_NEW_MAUVILLE, SPECIES_MAGNEZONE},
                                 {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_MAGNEZONE}),
+        .delta_Defense = -4,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -6307,6 +6657,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Magnezone, 0),
         .footprint = gMonFootprint_Magnezone,
         LEARNSETS(Magnezone),
+        .delta_Defense = -5,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_MAGNEMITE
@@ -6364,6 +6715,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Farfetchd),
         ICON(Farfetchd, 1),
         LEARNSETS(Farfetchd),
+        .delta_HP = 18,
+        .delta_Defense = 10,
+        .delta_SpAttack = 2,
+        .delta_SpDefense = 3,
+        .delta_Speed = 20,
     },
 
 #if P_GALARIAN_FORMS
@@ -6504,6 +6860,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Doduo,
         LEARNSETS(Doduo),
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_DODRIO}),
+        .delta_Defense = 5,
+        .delta_SpAttack = 2,
+        .delta_SpDefense = 2,
+        .delta_Speed = 3,
     },
 
     [SPECIES_DODRIO] =
@@ -6554,6 +6914,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Dodrio, 2),
         .footprint = gMonFootprint_Dodrio,
         LEARNSETS(Dodrio),
+        .delta_Defense = 10,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 5,
+        .delta_Speed = 5,
     },
 #endif //P_FAMILY_DODUO
 
@@ -6604,6 +6968,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Seel,
         LEARNSETS(Seel),
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DEWGONG}),
+        .delta_HP = 5,
+        .delta_Defense = 3,
+        .delta_SpAttack = 7,
+        .delta_SpDefense = 3,
+        .delta_Speed = -5,
     },
 
     [SPECIES_DEWGONG] =
@@ -6651,6 +7020,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Dewgong, 2),
         .footprint = gMonFootprint_Dewgong,
         LEARNSETS(Dewgong),
+        .delta_HP = 10,
+        .delta_Defense = 5,
+        .delta_SpAttack = 15,
+        .delta_SpDefense = 5,
+        .delta_Speed = -10,
     },
 #endif //P_FAMILY_SEEL
 
@@ -6731,6 +7105,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Grimer, 2),
         LEARNSETS(Grimer),
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MUK}),
+        .delta_Attack = -3,
+        .delta_SpDefense = 4,
     },
 
     [SPECIES_MUK] =
@@ -6759,6 +7135,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Muk),
         ICON(Muk, 2),
         LEARNSETS(Muk),
+        .delta_Attack = -5,
+        .delta_SpDefense = 10,
     },
 
 #if P_ALOLAN_FORMS
@@ -6876,6 +7254,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Shellder,
         LEARNSETS(Shellder),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_CLOYSTER}),
+        .delta_HP = 9,
+        .delta_Attack = -4,
+        .delta_Defense = -2,
+        .delta_SpAttack = -2,
+        .delta_SpDefense = -2,
+        .delta_Speed = -2,
     },
 
     [SPECIES_CLOYSTER] =
@@ -6925,6 +7309,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Cloyster, 2),
         .footprint = gMonFootprint_Cloyster,
         LEARNSETS(Cloyster),
+        .delta_HP = 25,
+        .delta_Attack = -10,
+        .delta_Defense = -5,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = -5,
+        .delta_Speed = -5,
     },
 #endif //P_FAMILY_SHELLDER
 
@@ -6976,6 +7366,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Gastly,
         LEARNSETS(Gastly),
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_HAUNTER}),
+        .delta_Attack = -2,
+        .delta_SpAttack = 3,
+        .delta_SpDefense = 3,
+        .delta_Speed = 3,
     },
 
     [SPECIES_HAUNTER] =
@@ -7027,6 +7421,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Haunter),
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GENGAR},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GENGAR}),
+        .delta_Attack = -4,
+        .delta_SpAttack = 4,
+        .delta_SpDefense = 6,
+        .delta_Speed = 4,
     },
 
 #if P_UPDATED_ABILITIES >= GEN_7
@@ -7084,6 +7482,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         PALETTES(Gengar),
         ICON(Gengar, 2),
+        .delta_Attack = -5,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 10,
+        .delta_Speed = 5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -7207,6 +7609,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Onix),
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX},
                                 {EVO_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX}),
+        .delta_HP = 10,
+        .delta_Attack = -3,
+        .delta_Defense = -5,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -7264,6 +7669,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         PALETTES(Steelix),
         ICON(Steelix, 0),
+        .delta_HP = 20,
+        .delta_Attack = -10,
+        .delta_Defense = -5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -7353,6 +7761,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Drowzee,
         LEARNSETS(Drowzee),
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_HYPNO}),
+        .delta_HP = 5,
+        .delta_Attack = -2,
+        .delta_Defense = 3,
+        .delta_SpAttack = 1,
+        .delta_SpDefense = 3,
+        .delta_Speed = -1,
     },
 
     [SPECIES_HYPNO] =
@@ -7403,6 +7817,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Hypno, 2),
         .footprint = gMonFootprint_Hypno,
         LEARNSETS(Hypno),
+        .delta_HP = 10,
+        .delta_Attack = -3,
+        .delta_Defense = 4,
+        .delta_SpAttack = 2,
+        .delta_SpDefense = 5,
+        .delta_Speed = -2,
     },
 #endif //P_FAMILY_DROWZEE
 
@@ -7453,6 +7873,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Krabby,
         LEARNSETS(Krabby),
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_KINGLER}),
+        .delta_HP = 2,
+        .delta_Defense = 6,
+        .delta_SpAttack = 4,
+        .delta_SpDefense = 6,
+        .delta_Speed = -3,
     },
 
 #define KINGLER_MISC_INFO                                                               \
@@ -7507,6 +7932,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         PALETTES(Kingler),
         ICON(Kingler, 0),
+        .delta_HP = 5,
+        .delta_Defense = 10,
+        .delta_SpAttack = 10,
+        .delta_SpDefense = 15,
+        .delta_Speed = -5,
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -7614,6 +8044,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Voltorb, 0),
         LEARNSETS(Voltorb),
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ELECTRODE}),
+        .delta_Defense, 3,
+        .delta_SpAttack = 3,
     },
 
     [SPECIES_ELECTRODE] =
@@ -7637,6 +8069,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Electrode),
         ICON(Electrode, 0),
         LEARNSETS(Electrode),
+        .delta_Defense, 5,
+        .delta_SpAttack = 5,
     },
 
 #if P_HISUIAN_FORMS
@@ -7740,6 +8174,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Exeggcute),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR},
                                 {EVO_NONE, 0, SPECIES_EXEGGUTOR_ALOLAN}),
+        .delta_Attack = 2,
+        .delta_Defense = -3,
+        .delta_SpAttack = -2,
     },
 
 #define EXEGGUTOR_MISC_INFO                                 \
@@ -7793,6 +8230,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Exeggutor),
         ICON(Exeggutor, 1),
         LEARNSETS(Exeggutor),
+        .delta_Attack = 5,
+        .delta_Defense = -5,
+        .delta_SpAttack = -5,
     },
 
 #if P_ALOLAN_FORMS
@@ -7883,6 +8323,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Cubone),
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK},
                                 {EVO_NONE, 0, SPECIES_MAROWAK_ALOLAN}),
+        .delta_HP = 10,
+        .delta_Attack = 5,
+        .delta_Defense = 14,
+        .delta_SpAttack = 7,
+        .delta_SpDefense = 8,
     },
 
 #define MAROWAK_MISC_INFO                                       \
@@ -7935,6 +8380,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Marowak),
         ICON(Marowak, 2),
         LEARNSETS(Marowak),
+        .delta_HP = 15,
+        .delta_Attack = 10,
+        .delta_Defense = 20,
+        .delta_SpAttack = 10,
+        .delta_SpDefense = 15,
     },
 
 #if P_ALOLAN_FORMS
@@ -8015,6 +8465,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .evolutions = EVOLUTION({EVO_LEVEL_ATK_LT_DEF, 20, SPECIES_HITMONCHAN},
                                 {EVO_LEVEL_ATK_GT_DEF, 20, SPECIES_HITMONLEE},
                                 {EVO_LEVEL_ATK_EQ_DEF, 20, SPECIES_HITMONTOP}),
+        .delta_HP = 3,
+        .delta_Attack = 3,
+        .delta_Defense = 3,
+        .delta_SpAttack =3,
+        .delta_SpDefense = 3,
+        .delta_Speed = 3,
     },
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -8063,6 +8519,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Hitmonlee, 2),
         .footprint = gMonFootprint_Hitmonlee,
         LEARNSETS(Hitmonlee),
+        .delta_HP = 10,
+        .delta_Defense = 7,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 5,
+        .delta_Speed = 3,
     },
 
     [SPECIES_HITMONCHAN] =
@@ -8110,6 +8571,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Hitmonchan, 2),
         .footprint = gMonFootprint_Hitmonchan,
         LEARNSETS(Hitmonchan),
+        .delta_Attack = 10,
+        .delta_Defense = 11,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 5,
+        .delta_Speed = -1,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -8158,6 +8624,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Hitmontop, 2),
         .footprint = gMonFootprint_Hitmontop,
         LEARNSETS(Hitmontop),
+        .delta_HP = 5,
+        .delta_Attack = 10,
+        .delta_Defense = 10,
+        .delta_SpAttack = 5,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS
@@ -8210,6 +8680,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Lickitung,
         LEARNSETS(Lickitung),
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_ROLLOUT, SPECIES_LICKILICKY}),
+        .delta_Attack = -5,
+        .delta_Defense = 3,
+        .delta_SpDefense = 6,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -8259,6 +8732,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Lickilicky, 1),
         .footprint = gMonFootprint_Lickilicky,
         LEARNSETS(Lickilicky),
+        .delta_Attack = -10,
+        .delta_Defense = 5,
+        .delta_SpDefense = 10,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LICKITUNG
@@ -8317,6 +8793,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Koffing),
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING},
                                 {EVO_NONE, 0, SPECIES_WEEZING_GALARIAN}),
+        .delta_HP = 3,
+        .delta_Defense = 3,
+        .delta_SpAttack = 3,
+        .delta_SpDefense = 3,
     },
 
 #define WEEZING_MISC_INFO                                           \
@@ -8375,6 +8855,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Weezing),
         ICON(Weezing, 2),
         LEARNSETS(Weezing),
+        .delta_HP = 5,
+        .delta_Defense = 5,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 5,
     },
 
 #if P_GALARIAN_FORMS
@@ -8461,6 +8945,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Rhyhorn,
         LEARNSETS(Rhyhorn),
         .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_RHYDON}),
+        .delta_Attack = -10,
+        .delta_Defense = -5,
+        .delta_SpAttack = -2,
+        .delta_SpDefense = 9,
+        .delta_Speed = 5,
     },
 
     [SPECIES_RHYDON] =
@@ -8512,6 +9001,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Rhydon),
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_PROTECTOR, SPECIES_RHYPERIOR},
                                 {EVO_ITEM, ITEM_PROTECTOR, SPECIES_RHYPERIOR}),
+        .delta_Attack = -22,
+        .delta_Defense = -9,
+        .delta_SpAttack = -4,
+        .delta_SpDefense = 19,
+        .delta_Speed = 10,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -8562,6 +9056,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Rhyperior, 0),
         .footprint = gMonFootprint_Rhyperior,
         LEARNSETS(Rhyperior),
+        .delta_Attack = -25,
+        .delta_Defense = -10,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = 25,
+        .delta_Speed = 10,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_RHYHORN
@@ -8666,6 +9165,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Chansey,
         LEARNSETS(Chansey),
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_BLISSEY}),
+        .delta_SpAttack = -2,
+        .delta_SpDefense = -7,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -8715,6 +9216,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Blissey, 0),
         .footprint = gMonFootprint_Blissey,
         LEARNSETS(Blissey),
+        .delta_SpAttack = -5,
+        .delta_SpDefense = -10,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_CHANSEY
@@ -8766,6 +9269,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Tangela,
         LEARNSETS(Tangela),
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_ANCIENT_POWER, SPECIES_TANGROWTH}),
+        .delta_HP = 6,
+        .delta_Attack = -5,
+        .delta_Defense = -4,
+        .delta_SpAttack = -4,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -8815,6 +9322,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Tangrowth, 0),
         .footprint = gMonFootprint_Tangrowth,
         LEARNSETS(Tangrowth),
+        .delta_HP = 10,
+        .delta_Attack = -10,
+        .delta_Defense = -5,
+        .delta_SpAttack = -5,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_TANGELA
@@ -8870,6 +9381,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         PALETTES(Kangaskhan),
         ICON(Kangaskhan, 2),
+        .delta_HP = 5,
+        .delta_Attack = 5,
+        .delta_Defense = 5,
+        .delta_SpDefense = 5,
+        .delta_Speed = 10,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -8953,6 +9469,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Horsea,
         LEARNSETS(Horsea),
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SEADRA}),
+        .delta_Defense = -3,
+        .delta_SpDefense = -1,
     },
 
     [SPECIES_SEADRA] =
@@ -9004,6 +9522,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Seadra),
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DRAGON_SCALE, SPECIES_KINGDRA},
                                 {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_KINGDRA}),
+        .delta_Defense = -5,
+        .delta_SpDefense = -2,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -9055,6 +9575,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Kingdra, 0),
         .footprint = gMonFootprint_Kingdra,
         LEARNSETS(Kingdra),
+        .delta_Defense = -5,
+        .delta_SpDefense = -5,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HORSEA
@@ -9109,6 +9631,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Goldeen,
         LEARNSETS(Goldeen),
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_SEAKING}),
+        .delta_HP = 4,
+        .delta_Attack = 7,
+        .delta_Defense = 4,
+        .delta_SpAttack = 2,
+        .delta_SpDefense = 5,
+        .delta_Speed = 2,
     },
 
     [SPECIES_SEAKING] =
@@ -9159,6 +9687,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Seaking, 0),
         .footprint = gMonFootprint_Seaking,
         LEARNSETS(Seaking),
+        .delta_HP = 10,
+        .delta_Attack = 13,
+        .delta_Defense = 5,
+        .delta_SpAttack = 5,
+        .delta_SpDefense = 10,
+        .delta_Speed = 2,
     },
 #endif //P_FAMILY_GOLDEEN
 
@@ -9212,6 +9746,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Staryu,
         LEARNSETS(Staryu),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_STARMIE}),
+        .delta_Attack = -2,
     },
 
     [SPECIES_STARMIE] =
@@ -9261,6 +9796,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Starmie, 2),
         .footprint = gMonFootprint_Starmie,
         LEARNSETS(Starmie),
+        .delta_Attack = -5,
     },
 #endif //P_FAMILY_STARYU
 
@@ -9373,6 +9909,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(MrMime),
         ICON(MrMime, 0),
         LEARNSETS(MrMime),
+        .delta_Attack = 5,
+        .delta_Defense = 10,
+        .delta_SpAttack = 15,
+        .delta_SpDefense = 5,
     },
 
 #if P_GALARIAN_FORMS
@@ -9569,6 +10109,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         PALETTES(Scizor),
         ICON(Scizor, 0),
+        .delta_Attack = -5,
+        .delta_SpDefense = 5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -9609,7 +10151,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 
-#if P_GEN_8_CROSS_EVOS
+//#if P_GEN_8_CROSS_EVOS
     [SPECIES_KLEAVOR] =
     {
         .baseHP        = 70,
@@ -9655,8 +10197,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Kleavor, 2),
         //.footprint = gMonFootprint_Kleavor,
         LEARNSETS(Kleavor),
+        .delta_Attack = -5,
+        .delta_Defense = 5,
     },
-#endif //P_GEN_8_CROSS_EVOS
+//#endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_SCYTHER
 
 #if P_FAMILY_JYNX
@@ -9756,6 +10300,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Jynx, 2),
         .footprint = gMonFootprint_Jynx,
         LEARNSETS(Jynx),
+        .delta_Attack = 5,
+        .delta_Defense = 5,
+        .delta_SpAttack = 10,
+        .delta_SpDefense = 15,
+        .delta_Speed = 10,
     },
 #endif //P_FAMILY_JYNX
 
@@ -9861,6 +10410,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Electabuzz),
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_ELECTIRIZER, SPECIES_ELECTIVIRE},
                                 {EVO_ITEM, ITEM_ELECTIRIZER, SPECIES_ELECTIVIRE}),
+        .delta_Attack = 2,
+        .delta_Defense = 3,
+        .delta_SpDefense = -5,
+        .delta_Speed = -11,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -9910,6 +10463,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Electivire, 1),
         .footprint = gMonFootprint_Electivire,
         LEARNSETS(Electivire),
+        .delta_Attack = 2,
+        .delta_Defense = 3,
+        .delta_SpDefense = -5,
+        .delta_Speed = -10,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ELECTABUZZ
@@ -10015,6 +10572,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Magmar),
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_MAGMARIZER, SPECIES_MAGMORTAR},
                                 {EVO_ITEM, ITEM_MAGMARIZER, SPECIES_MAGMORTAR}),
+        .delta_Attack = = -10,
+        .delta-Defense = 3,
+        .delta_SpDefense = -5,
+        .delta_Speed = 3,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -10065,6 +10626,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Magmortar, 0),
         .footprint = gMonFootprint_Magmortar,
         LEARNSETS(Magmortar),
+        .delta_Attack = = -10,
+        .delta-Defense = 3,
+        .delta_SpDefense = -5,
+        .delta_Speed = 2,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_MAGMAR
@@ -10120,6 +10685,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         PALETTES(Pinsir),
         ICON(Pinsir, 2),
+        .delta_HP = 10,
+        .delta_Attack = -5.
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -10214,6 +10781,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Tauros),
         ICON(Tauros, 2),
         LEARNSETS(Tauros),
+        .delta_HP = 5,
+        .delta_Attack = 5,
+        .delta_Defense = 10,
+        .delta_SpDefense = 5,
+        .delta_Speed = 5,
     },
 
 #if P_PALDEAN_FORMS
@@ -10343,6 +10915,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Magikarp,
         LEARNSETS(Magikarp),
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GYARADOS}),
+        .delta_Defense = -2,
+        .delta_SpAttack = -1,
+        .delta_Speed = -1,
     },
 
 #define GYARADOS_MISC_INFO                                  \
@@ -10397,6 +10972,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         PALETTES(Gyarados),
         ICON(Gyarados, 0),
+        .delta_Defense = -4,
+        .delta_SpAttack = -5,
+        .delta_Speed = -1,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -10487,6 +11065,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         PALETTES(Lapras),
         ICON(Lapras, 2),
+        .delta_Attack = -10,
+        .delta_Defense = 10,
+        .delta_SpAttack = -10,
+        .delta_SpDefense = 5,
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -10566,6 +11148,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Ditto, 2),
         .footprint = gMonFootprint_Ditto,
         LEARNSETS(Ditto),
+        .delta_HP = 2,
+        .delta_Attack = 32,
+        .delta_Defense = 37,
+        .delta_SpAttack = 37,
+        .delta_SpDefense = 37,
+        .delta_Speed = 2,
     },
 #endif //P_FAMILY_DITTO
 
@@ -10632,6 +11220,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
                                 {EVO_SPECIFIC_MAP, MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM, SPECIES_GLACEON},
                                 {EVO_ITEM, ITEM_ICE_STONE, SPECIES_GLACEON},
                                 {EVO_FRIENDSHIP_MOVE_TYPE, TYPE_FAIRY, SPECIES_SYLVEON}),
+        .delta_SpAttack = 5,
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -10707,6 +11296,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Vaporeon, 0),
         .footprint = gMonFootprint_Vaporeon,
         LEARNSETS(Vaporeon),
+        .delta_Attack = -5,
     },
 
     [SPECIES_JOLTEON] =
@@ -10754,6 +11344,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Jolteon, 2),
         .footprint = gMonFootprint_Jolteon,
         LEARNSETS(Jolteon),
+        .delta_Attack = -5,
     },
 
     [SPECIES_FLAREON] =
@@ -10801,6 +11392,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Flareon, 3),
         .footprint = gMonFootprint_Flareon,
         LEARNSETS(Flareon),
+        .delta_HP = 10,
+        .delta_Attack = -15,
+        .delta_Defense = 20,
+        .delta_SpAttack = -20,
+        .delta_SpDefense = -5,
+        .delta_Speed = 5,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -10849,6 +11446,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Espeon, 2),
         .footprint = gMonFootprint_Espeon,
         LEARNSETS(Espeon),
+        .delta_Attack = -5,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = 5,
     },
 
     [SPECIES_UMBREON] =
@@ -10896,6 +11496,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Umbreon, 0),
         .footprint = gMonFootprint_Umbreon,
         LEARNSETS(Umbreon),
+        .delta_Defense = 5,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = -5,
     },
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -10945,6 +11548,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Leafeon, 1),
         .footprint = gMonFootprint_Leafeon,
         LEARNSETS(Leafeon),
+        .delta_Attack = -10,
+        .delta_Defense = -5,
+        .delta_SpAttack - 10,
     },
 
     [SPECIES_GLACEON] =
@@ -10992,6 +11598,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Glaceon, 0),
         .footprint = gMonFootprint_Glaceon,
         LEARNSETS(Glaceon),
+        .delta_Attack = -5,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = 5,
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -11042,6 +11651,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Sylveon, 0),
         .footprint = gMonFootprint_Sylveon,
         LEARNSETS(Sylveon),
+        .delta_HP = 10,
+        .delta_Attack = -5,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = -5,
     },
 #endif //P_GEN_6_CROSS_EVOS
 #endif //P_FAMILY_EEVEE
@@ -11094,6 +11707,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Porygon),
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_UPGRADE, SPECIES_PORYGON2},
                                 {EVO_ITEM, ITEM_UPGRADE, SPECIES_PORYGON2}),
+        .delta_Attack = -3,
+        .delta_SpAttack = -3,
+        .delta_SpDefense = -4,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -11145,6 +11761,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Porygon2),
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DUBIOUS_DISC, SPECIES_PORYGON_Z},
                                 {EVO_ITEM, ITEM_DUBIOUS_DISC, SPECIES_PORYGON_Z}),
+        .delta_Attack = -5,
+        .delta_SpAttack = -4,
+        .delta_SpDefense = -7,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -11194,6 +11813,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(PorygonZ, 0),
         .footprint = gMonFootprint_PorygonZ,
         LEARNSETS(PorygonZ),
+        .delta_Attack = -5,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = -5,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
@@ -11246,6 +11868,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Omanyte,
         LEARNSETS(Omanyte),
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_OMASTAR}),
+        .delta_HP = 2,
+        .delta_Attack = -3,
+        .delta_Defense = 9,
+        .delta_SpAttack = 3,
     },
 
     [SPECIES_OMASTAR] =
@@ -11293,6 +11919,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Omastar, 0),
         .footprint = gMonFootprint_Omastar,
         LEARNSETS(Omastar),
+        .delta_HP = 5,
+        .delta_Attack = -5,
+        .delta_Defense = 15,
+        .delta_SpAttack = 5,
     },
 #endif //P_FAMILY_OMANYTE
 
@@ -11343,6 +11973,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Kabuto,
         LEARNSETS(Kabuto),
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_KABUTOPS}),
+        .delta_Attack = -3,
+        .delta_Defense = -4,
+        .delta_SpDefense = 3,
+        .delta_Speed = 13,
     },
 
     [SPECIES_KABUTOPS] =
@@ -11390,6 +12024,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Kabutops, 2),
         .footprint = gMonFootprint_Kabutops,
         LEARNSETS(Kabutops),
+        .delta_Attack = -5,
+        .delta_Defense = -5,
+        .delta_SpDefense = 5,
+        .delta_Speed = 25,
     },
 #endif //P_FAMILY_KABUTO
 
@@ -11445,6 +12083,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         PALETTES(Aerodactyl),
         ICON(Aerodactyl, 2),
+        .delta_Attack = -5,
+        .delta_Defense = 10,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -11590,6 +12230,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         PALETTES(Snorlax),
         ICON(Snorlax, 3),
+        .delta_Attack = -10,
+        .delta_Defense = 10,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = -10,
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -11947,6 +12591,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Dratini,
         LEARNSETS(Dratini),
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DRAGONAIR}),
+        .delta_HP = -1,
+        .delta_Attack = -5,
+        .delta_Defense = -2,
+        .delta_SpAttack = -2,
+        .delta_SpDefense = -2,
+        .delta_Speed = 4,
     },
 
     [SPECIES_DRAGONAIR] =
@@ -11996,6 +12646,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Dragonair,
         LEARNSETS(Dragonair),
         .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_DRAGONITE}),
+        .delta_HP = -1,
+        .delta_Attack = -9,
+        .delta_Defense = -3,
+        .delta_SpAttack = -3,
+        .delta_SpDefense = -3,
+        .delta_Speed = 7,
     },
 
     [SPECIES_DRAGONITE] =
@@ -12044,6 +12700,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Dragonite, 2),
         .footprint = gMonFootprint_Dragonite,
         LEARNSETS(Dragonite),
+        .delta_HP = -1,
+        .delta_Attack = -19,
+        .delta_Defense = -5,
+        .delta_SpAttack = -5,
+        .delta_SpDefense = -5,
+        .delta_Speed = 10,
     },
 #endif //P_FAMILY_DRATINI
 
