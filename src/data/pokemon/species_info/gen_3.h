@@ -11,7 +11,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseDefense   = 35,
         .baseSpeed     = 70,
         .baseSpAttack  = 65,
-        .baseSpDefense = 55,
+        .baseSpDefense = 55,    
         .types = { TYPE_GRASS, TYPE_GRASS },
         .catchRate = 45,
         .expYield = 62,
@@ -1589,7 +1589,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .delta_HP = 3,
         .delta_Attack = 5,
         .delta_Defense = 5,
-        .delta_SpAttack = 6,
         .delta_SpDefense = 6,
     },
 
@@ -1641,7 +1640,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .delta_HP = 5,
         .delta_Attack = 10,
         .delta_Defense = 15,
-        .delta_SpAttack = 15,
         .delta_SpDefense = 15,
     },
 #endif //P_FAMILY_TAILLOW
@@ -1697,7 +1695,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PELIPPER}),
         .delta_Attack = 2,
         .delta_Defense = 4,
-        .delta_SpAttack = 7,
+        .delta_SpAttack = 2,
         .delta_SpDefense = 5,
     },
 
@@ -1750,7 +1748,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         LEARNSETS(Pelipper),
         .delta_Attack = 5,
         .delta_Defense = 20,
-        .delta_SpAttack = 15,
+        .delta_SpAttack = 5,
         .delta_SpDefense = 15,
     },
 #endif //P_FAMILY_WINGULL
@@ -2098,9 +2096,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .delta_HP = -2,
         .delta_Attack = 5,
         .delta_Defense = 2,
-        .delta_SpAttack = 11,
+        .delta_SpAttack = 2,
         .delta_SpDefense = 4,
-        .delta_Speed = 22,
+        .delta_Speed = 6,
     },
 
     [SPECIES_MASQUERAIN] =
@@ -2159,9 +2157,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .delta_HP = -5,
         .delta_Attack = 15,
         .delta_Defense = 3,
-        .delta_SpAttack = 25,
+        .delta_SpAttack = 5,
         .delta_SpDefense = 8,
-        .delta_Speed = 30,
+        .delta_Speed = 10,
     },
 #endif //P_FAMILY_SURSKIT
 
@@ -3028,7 +3026,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .delta_Defense = 5,
         .delta_SpAttack = 11,
         .delta_SpDefense = 9,
-        .delta_Speed = 22,
+        .delta_Speed = 10,
     },
 
     [SPECIES_DELCATTY] =
@@ -3082,7 +3080,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .delta_Defense = 10,
         .delta_SpAttack = 25,
         .delta_SpDefense = 20,
-        .delta_Speed = 45,
+        .delta_Speed = 25,
     },
 #endif //P_FAMILY_SKITTY
 
@@ -3944,9 +3942,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         LEARNSETS(Volbeat),
         .delta_HP = 5,
         .delta_Attack = 2,
-        .delta_Defense = 15,
         .delta_SpAttack = 53,
-        .delta_SpDefense = -5,
         .delta_Speed = 5,
     },
 
@@ -4001,8 +3997,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Illumise, 2),
         .footprint = gMonFootprint_Illumise,
         LEARNSETS(Illumise),
-        .delta_HP = 10,
-        .delta_Attack = 13,
+        .delta_HP = 15,
+        .delta_Attack = 28,
         .delta_Defense = 35,
         .delta_SpAttack = 2,
         .delta_SpDefense = 20,
@@ -5935,7 +5931,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .delta_Attack = 2,
         .delta_Defense = 8,
         .delta_SpAttack = -1,
-        .delta_SpDefense = 2
+        .delta_SpDefense = 2,
         .delta_Speed = -2,
     },
 
@@ -5989,7 +5985,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .delta_Attack = 4,
         .delta_Defense = 13,
         .delta_SpAttack = -1,
-        .delta_SpDefense = 3
+        .delta_SpDefense = 3,
         .delta_Speed = -3,
     },
 #endif //P_FAMILY_LILEEP
@@ -6244,7 +6240,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .delta_Defense = 15,                                    \
         .delta_SpAttack = 20,                                   \
         .delta_SpDefense = 15,                                  \
-        .delta_Speed = 5,                                       \
+        .delta_Speed = 5                                        \
 
     [SPECIES_CASTFORM_NORMAL] =
     {
@@ -6872,11 +6868,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Chimecho, 0),
         .footprint = gMonFootprint_Chimecho,
         LEARNSETS(Chimecho),
-        .delta_HP = 10,
         .delta_Attack = 5,
-        .delta_Defense = 10,
         .delta_SpAttack = 20,
-        .delta_SpDefense = 20,
+        .delta_SpDefense = 10,
         .delta_Speed = 10,
     },
 #endif //P_FAMILY_CHIMECHO

@@ -1229,7 +1229,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .delta_Attack = 2,
         .delta_Defense = 2,
         .delta_SpAttack = 3,
-        .delta_SpDefence = 4,
+        .delta_SpDefense = 4,
         .delta_Speed = -4,
     },
 
@@ -1284,7 +1284,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .delta_Attack = 3,
         .delta_Defense = 3,
         .delta_SpAttack = 6,
-        .delta_SpDefence = 8,
+        .delta_SpDefense = 8,
         .delta_Speed = -6,
     },
 
@@ -1345,7 +1345,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .delta_Attack = 5,
         .delta_Defense = 5,
         .delta_SpAttack = 10,
-        .delta_SpDefence = 15,
+        .delta_SpDefense = 15,
         .delta_Speed = -11,
     },
 
@@ -1739,7 +1739,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Ekans),
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARBOK}),
         .delta_HP = 8,
-        .delta_Attack = 5,
         .delta_Defense = 5,
         .delta_SpAttack = 5,
         .delta_SpDefense = 8,
@@ -1792,7 +1791,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Arbok,
         LEARNSETS(Arbok),
         .delta_HP = 20,
-        .delta_Attack = 10,
         .delta_Defense = 11,
         .delta_SpAttack = 10,
         .delta_SpDefense = 16,
@@ -4024,7 +4022,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Diglett),
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO}),
         .delta_HP = 2,
-        .delta_Attack = 12,
+        .delta_Attack = 2,
         .delta_Defense = 5,
         .delta_SpAttack = 7,
         .delta_SpDefense = 9,
@@ -4060,7 +4058,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Dugtrio, 2),
         LEARNSETS(Dugtrio),
         .delta_HP = 10,
-        .delta_Attack = 25,
+        .delta_Attack = 5,
         .delta_Defense = 15,
         .delta_SpAttack = 15,
         .delta_SpDefense = 20,
@@ -6863,7 +6861,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .delta_Defense = 5,
         .delta_SpAttack = 2,
         .delta_SpDefense = 2,
-        .delta_Speed = 3,
     },
 
     [SPECIES_DODRIO] =
@@ -6917,7 +6914,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .delta_Defense = 10,
         .delta_SpAttack = 5,
         .delta_SpDefense = 5,
-        .delta_Speed = 5,
     },
 #endif //P_FAMILY_DODUO
 
@@ -8044,7 +8040,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Voltorb, 0),
         LEARNSETS(Voltorb),
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ELECTRODE}),
-        .delta_Defense, 3,
+        .delta_Defense = 3,
         .delta_SpAttack = 3,
     },
 
@@ -8069,7 +8065,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Electrode),
         ICON(Electrode, 0),
         LEARNSETS(Electrode),
-        .delta_Defense, 5,
+        .delta_Defense = 5,
         .delta_SpAttack = 5,
     },
 
@@ -10151,7 +10147,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 
-//#if P_GEN_8_CROSS_EVOS
+#if P_GEN_8_CROSS_EVOS
     [SPECIES_KLEAVOR] =
     {
         .baseHP        = 70,
@@ -10200,7 +10196,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .delta_Attack = -5,
         .delta_Defense = 5,
     },
-//#endif //P_GEN_8_CROSS_EVOS
+#endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_SCYTHER
 
 #if P_FAMILY_JYNX
@@ -10572,8 +10568,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Magmar),
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_MAGMARIZER, SPECIES_MAGMORTAR},
                                 {EVO_ITEM, ITEM_MAGMARIZER, SPECIES_MAGMORTAR}),
-        .delta_Attack = = -10,
-        .delta-Defense = 3,
+        .delta_Attack = -10,
+        .delta_Defense = 3,
         .delta_SpDefense = -5,
         .delta_Speed = 3,
     },
@@ -10626,8 +10622,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Magmortar, 0),
         .footprint = gMonFootprint_Magmortar,
         LEARNSETS(Magmortar),
-        .delta_Attack = = -10,
-        .delta-Defense = 3,
+        .delta_Attack = -10,
+        .delta_Defense = 3,
         .delta_SpDefense = -5,
         .delta_Speed = 2,
     },

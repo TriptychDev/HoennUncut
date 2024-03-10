@@ -90,7 +90,7 @@ static void InitPlayerTrainerId(void)
 // L=A isnt set here for some reason.
 static void SetDefaultOptions(void)
 {
-    gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_MID;
+    gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_FAST;
     gSaveBlock2Ptr->optionsWindowFrameType = 0;
     gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_MONO;
     gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
@@ -140,6 +140,8 @@ void ResetMenuAndMonGlobals(void)
 {
     gDifferentSaveFile = FALSE;
     ResetPokedexScrollPositions();
+    //CHANGE: Allow new game to transfer Pokemon all reset to level 5 defaults
+    //REASON: New Game+
     ZeroPlayerPartyMons();
     ZeroEnemyPartyMons();
     ResetBagScrollPositions();
@@ -153,6 +155,8 @@ void NewGameInitData(void)
 
     gDifferentSaveFile = TRUE;
     gSaveBlock2Ptr->encryptionKey = 0;
+    //CHANGE: Allow new game to transfer Pokemon all reset to level 5 defaults
+    //REASON: New Game+
     ZeroPlayerPartyMons();
     ZeroEnemyPartyMons();
     ResetPokedex();

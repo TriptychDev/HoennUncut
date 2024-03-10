@@ -309,6 +309,9 @@ struct BattlePokemon
     /*0x51*/ u32 status2;
     /*0x55*/ u32 otId;
     /*0x59*/ u8 metLevel;
+    /*0x60*/ u8 adept1;
+    /*0x61*/ u8 adept2;
+    /*0x62*/ u8 isAirborne;
 };
 
 struct Evolution
@@ -388,7 +391,7 @@ struct SpeciesInfo /*0x8C*/
             u8 padding3:2;
  /* 0x79 */ u8 enemyMonElevation; // This determines how much higher above the usual position the enemy Pokémon is during battle. Species that float or fly have nonzero values.
             // Flags
- /* 0x7A */ u32 isLegendary:1;
+ /* 0x7A */ u32 isLegendary:1; 
             u32 isMythical:1;
             u32 isUltraBeast:1;
             u32 isParadoxForm:1;
@@ -419,6 +422,12 @@ struct SpeciesInfo /*0x8C*/
             s8 delta_SpAttack;
             s8 delta_SpDefense;
             s8 delta_Speed;
+//CHANGE:   Adept traversal added to base struct
+//REASON:   New Land/Sea/Sky System for Pokemon and moves. 
+//          0 = None, 1 = Land, 2 = Sea, 3 = Sky
+            u8 adept1;
+            u8 adept2;
+            u8 isAirborne;
 };
 
 struct BattleMove

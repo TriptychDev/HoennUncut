@@ -1743,6 +1743,11 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
     if (B_AFFECTION_MECHANICS == TRUE && GetBattlerAffectionHearts(battlerDef) == AFFECTION_FIVE_HEARTS)
         calc = (calc * 90) / 100;
 
+    //CHANGE: If using a contact move, the defender is Airborne and attacker is not, attacker has 15% reduced accuracy
+    //REASON: Land/Sea/Sky System
+    if (gBattleMoves[move].makesContact && gBattleMons[battlerDef].isAirborne == 1 && gBattleMons[battlerAtk].isAirborne == 0)
+        calc = (calc * 85) / 100;
+
     return calc;
 }
 
