@@ -57,3 +57,5 @@ tools/compresSmol/compresSmolTilemap
 *.fastSmol
 *.smolTM
 __pycache__
+include/constants/heal_locations.h
+include/constants/script_commands.h

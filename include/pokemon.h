@@ -166,6 +166,14 @@ struct PokemonSubstruct1
     u8 hyperTrainedSpDefense:1;
 };
 
+//CHANGE: Take Substructure over to host ability system
+//REASON: Updated Ability system will require much space. EVs are no longer needed due to change to stat calculations, and contests will be cut as well.
+//Notes:    u16 = 65536 Abilities
+//          u16 Ability
+//          u16 Descriptor
+//          Valid Abilities and Descriptors set by Flags in trainer Dex
+//          Unlock flags by conditions
+
 struct PokemonSubstruct2
 {
     u8 hpEV;
@@ -523,6 +531,17 @@ struct SpeciesInfo /*0xC4*/
     const struct Evolution *evolutions;
     const u16 *formSpeciesIdTable;
     const struct FormChange *formChangeTable;
+
+//CHANGE:   Delta stats added to base struct
+//REASON:   Stat adjustments will be scaled by pokemon level. As stat changes can be positive or negative, stored as s8.
+//          These deltas are the final stat changes seen once the Pokemon reaches the highest adjustment tier.
+    s8 deltaHP;
+    s8 deltaAttack;
+    s8 deltaDefense;
+    s8 deltaSpAttack;
+    s8 deltaSpDefense;
+    s8 deltaSpeed;
+
 #if OW_POKEMON_OBJECT_EVENTS
     struct ObjectEventGraphicsInfo overworldData;
 #if P_GENDER_DIFFERENCES
@@ -795,6 +814,13 @@ u32 GetSpeciesBaseSpAttack(u16 species);
 u32 GetSpeciesBaseSpDefense(u16 species);
 u32 GetSpeciesBaseSpeed(u16 species);
 u32 GetSpeciesBaseStat(u16 species, u32 statIndex);
+u32 GetSpeciesDeltaHP(u16 species);
+u32 GetSpeciesDeltaAttack(u16 species);
+u32 GetSpeciesDeltaDefense(u16 species);
+u32 GetSpeciesDeltaSpAttack(u16 species);
+u32 GetSpeciesDeltaSpDefense(u16 species);
+u32 GetSpeciesDeltaSpeed(u16 species);
+u32 GetSpeciesDeltaStat(u16 species, u32 statIndex);
 const struct LevelUpMove *GetSpeciesLevelUpLearnset(u16 species);
 const u16 *GetSpeciesTeachableLearnset(u16 species);
 const u16 *GetSpeciesEggMoves(u16 species);

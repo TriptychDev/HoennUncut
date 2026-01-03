@@ -4882,6 +4882,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sCetoddleTeachableLearnset,
         .eggMoveLearnset = sCetoddleEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_CETITAN}),
+        .deltaHP = 0,
+        .deltaAttack = -4,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 2,
     },
 
     [SPECIES_CETITAN] =
@@ -4945,6 +4951,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sCetitanLevelUpLearnset,
         .teachableLearnset = sCetitanTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = -8,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 2,
     },
 #endif //P_FAMILY_CETODDLE
 

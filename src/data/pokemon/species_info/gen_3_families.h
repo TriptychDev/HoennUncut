@@ -73,6 +73,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sTreeckoTeachableLearnset,
         .eggMoveLearnset = sTreeckoEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_GROVYLE}),
+        .deltaHP = 0,
+        .deltaAttack = 20,
+        .deltaDefense = 0,
+        .deltaSpAttack = -4,
+        .deltaSpDefense = -2,
+        .deltaSpeed = -2,
     },
 
     [SPECIES_GROVYLE] =
@@ -143,6 +149,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sGrovyleLevelUpLearnset,
         .teachableLearnset = sGrovyleTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SCEPTILE}),
+        .deltaHP = 0,
+        .deltaAttack = 20,
+        .deltaDefense = 0,
+        .deltaSpAttack = -7,
+        .deltaSpDefense = -3,
+        .deltaSpeed = -4,
     },
 
     [SPECIES_SCEPTILE] =
@@ -218,6 +230,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSceptileTeachableLearnset,
         .formSpeciesIdTable = sSceptileFormSpeciesIdTable,
         .formChangeTable = sSceptileFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 20,
+        .deltaDefense = 0,
+        .deltaSpAttack = -10,
+        .deltaSpDefense = -5,
+        .deltaSpeed = -5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -374,6 +392,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sTorchicTeachableLearnset,
         .eggMoveLearnset = sTorchicEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_COMBUSKEN}),
+        .deltaHP = 0,
+        .deltaAttack = -2,
+        .deltaDefense = 0,
+        .deltaSpAttack = -2,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 10,
     },
 
     [SPECIES_COMBUSKEN] =
@@ -456,6 +480,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sCombuskenLevelUpLearnset,
         .teachableLearnset = sCombuskenTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BLAZIKEN}),
+        .deltaHP = 0,
+        .deltaAttack = -3,
+        .deltaDefense = 0,
+        .deltaSpAttack = -3,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 10,
     },
 
     [SPECIES_BLAZIKEN] =
@@ -546,6 +576,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sBlazikenTeachableLearnset,
         .formSpeciesIdTable = sBlazikenFormSpeciesIdTable,
         .formChangeTable = sBlazikenFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = -5,
+        .deltaDefense = 0,
+        .deltaSpAttack = -5,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 10,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -689,6 +725,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sMudkipTeachableLearnset,
         .eggMoveLearnset = sMudkipEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_MARSHTOMP}),
+        .deltaHP = 15,
+        .deltaAttack = -4,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = -4,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_MARSHTOMP] =
@@ -763,6 +805,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sMarshtompLevelUpLearnset,
         .teachableLearnset = sMarshtompTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SWAMPERT}),
+        .deltaHP = 15,
+        .deltaAttack = -6,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = -6,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_SWAMPERT] =
@@ -840,6 +888,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSwampertTeachableLearnset,
         .formSpeciesIdTable = sSwampertFormSpeciesIdTable,
         .formChangeTable = sSwampertFormChangeTable,
+        .deltaHP = 15,
+        .deltaAttack = -10,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = -10,
+        .deltaSpeed = 0,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -991,6 +1045,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sPoochyenaTeachableLearnset,
         .eggMoveLearnset = sPoochyenaEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_MIGHTYENA}),
+        .deltaHP = 5,
+        .deltaAttack = 15,
+        .deltaDefense = 20,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 5,
     },
 
     [SPECIES_MIGHTYENA] =
@@ -1064,6 +1124,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sMightyenaLevelUpLearnset,
         .teachableLearnset = sMightyenaTeachableLearnset,
+        .deltaHP = 5,
+        .deltaAttack = 15,
+        .deltaDefense = 20,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 5,
     },
 #endif //P_FAMILY_POOCHYENA
 
@@ -1152,6 +1218,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggMoveLearnset = sZigzagoonEggMoveLearnset,
         .formSpeciesIdTable = sZigzagoonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LINOONE}),
+        .deltaHP = 2,
+        .deltaAttack = 15,
+        .deltaDefense = 14,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 14,
+        .deltaSpeed = 10,
     },
 
     [SPECIES_LINOONE] =
@@ -1228,6 +1300,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLinooneLevelUpLearnset,
         .teachableLearnset = sLinooneTeachableLearnset,
         .formSpeciesIdTable = sLinooneFormSpeciesIdTable,
+        .deltaHP = 2,
+        .deltaAttack = 15,
+        .deltaDefense = 14,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 14,
+        .deltaSpeed = 10,
     },
 
 #if P_GALARIAN_FORMS
@@ -1296,6 +1374,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggMoveLearnset = sZigzagoonGalarEggMoveLearnset,
         .formSpeciesIdTable = sZigzagoonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LINOONE_GALAR}),
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_LINOONE_GALAR] =
@@ -1362,6 +1446,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sLinooneGalarTeachableLearnset,
         .formSpeciesIdTable = sLinooneFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_OBSTAGOON, CONDITIONS({IF_TIME, TIME_NIGHT})}),
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_OBSTAGOON] =
@@ -1425,6 +1515,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sObstagoonLevelUpLearnset,
         .teachableLearnset = sObstagoonTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ZIGZAGOON
@@ -1506,6 +1602,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sWurmpleTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_SILCOON, CONDITIONS({IF_PID_UPPER_MODULO_10_GT, 4})},
                                 {EVO_LEVEL, 7, SPECIES_CASCOON, CONDITIONS({IF_PID_UPPER_MODULO_10_LT, 5})}),
+        .deltaHP = 10,
+        .deltaAttack = 10,
+        .deltaDefense = 10,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 10,
     },
 
     [SPECIES_SILCOON] =
@@ -1575,6 +1677,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSilcoonLevelUpLearnset,
         .teachableLearnset = sSilcoonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BEAUTIFLY}),
+        .deltaHP = 10,
+        .deltaAttack = 0,
+        .deltaDefense = 10,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_BEAUTIFLY] =
@@ -1671,6 +1779,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sBeautiflyLevelUpLearnset,
         .teachableLearnset = sBeautiflyTeachableLearnset,
+        .deltaHP = 20,
+        .deltaAttack = 5,
+        .deltaDefense = 20,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 20,
     },
 
     [SPECIES_CASCOON] =
@@ -1748,6 +1862,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sCascoonLevelUpLearnset,
         .teachableLearnset = sCascoonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_DUSTOX}),
+        .deltaHP = 10,
+        .deltaAttack = 0,
+        .deltaDefense = 10,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_DUSTOX] =
@@ -1852,6 +1972,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sDustoxLevelUpLearnset,
         .teachableLearnset = sDustoxTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 15,
+        .deltaDefense = 25,
+        .deltaSpAttack = 20,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 15,
     },
 #endif //P_FAMILY_WURMPLE
 
@@ -1924,6 +2050,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sLotadTeachableLearnset,
         .eggMoveLearnset = sLotadEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_LOMBRE}),
+        .deltaHP = 10,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_LOMBRE] =
@@ -1995,6 +2127,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLombreLevelUpLearnset,
         .teachableLearnset = sLombreTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_LUDICOLO}),
+        .deltaHP = 10,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_LUDICOLO] =
@@ -2086,6 +2224,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sLudicoloLevelUpLearnset,
         .teachableLearnset = sLudicoloTeachableLearnset,
+        .deltaHP = 10,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_LOTAD
 
@@ -2164,6 +2308,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSeedotTeachableLearnset,
         .eggMoveLearnset = sSeedotEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_NUZLEAF}),
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 10,
     },
 
     [SPECIES_NUZLEAF] =
@@ -2252,6 +2402,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sNuzleafLevelUpLearnset,
         .teachableLearnset = sNuzleafTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_SHIFTRY}),
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 10,
     },
 
     [SPECIES_SHIFTRY] =
@@ -2343,6 +2499,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sShiftryLevelUpLearnset,
         .teachableLearnset = sShiftryTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 10,
     },
 #endif //P_FAMILY_SEEDOT
 
@@ -2420,6 +2582,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sTaillowTeachableLearnset,
         .eggMoveLearnset = sTaillowEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SWELLOW}),
+        .deltaHP = 5,
+        .deltaAttack = 10,
+        .deltaDefense = 15,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_SWELLOW] =
@@ -2493,6 +2661,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sSwellowLevelUpLearnset,
         .teachableLearnset = sSwellowTeachableLearnset,
+        .deltaHP = 5,
+        .deltaAttack = 10,
+        .deltaDefense = 15,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_TAILLOW
 
@@ -2570,6 +2744,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sWingullTeachableLearnset,
         .eggMoveLearnset = sWingullEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PELIPPER}),
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 20,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_PELIPPER] =
@@ -2655,6 +2835,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sPelipperLevelUpLearnset,
         .teachableLearnset = sPelipperTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 20,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_WINGULL
 
@@ -2734,6 +2920,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sRaltsTeachableLearnset,
         .eggMoveLearnset = sRaltsEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_KIRLIA}),
+        .deltaHP = 12,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = -2,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_KIRLIA] =
@@ -2806,6 +2998,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
                                 ,{EVO_ITEM, ITEM_DAWN_STONE, SPECIES_GALLADE, CONDITIONS({IF_GENDER, MON_MALE})}
                             #endif
                             ),
+        .deltaHP = 12,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = -4,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_GARDEVOIR] =
@@ -2881,6 +3079,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sGardevoirTeachableLearnset,
         .formSpeciesIdTable = sGardevoirFormSpeciesIdTable,
         .formChangeTable = sGardevoirFormChangeTable,
+        .deltaHP = 12,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = -15,
+        .deltaSpeed = 0,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -3030,6 +3234,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sGalladeTeachableLearnset,
         .formSpeciesIdTable = sGalladeFormSpeciesIdTable,
         .formChangeTable = sGalladeFormChangeTable,
+        .deltaHP = 2,
+        .deltaAttack = -5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -3175,6 +3385,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSurskitTeachableLearnset,
         .eggMoveLearnset = sSurskitEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_MASQUERAIN}),
+        .deltaHP = -2,
+        .deltaAttack = 15,
+        .deltaDefense = 3,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 8,
+        .deltaSpeed = 10,
     },
 
     [SPECIES_MASQUERAIN] =
@@ -3257,6 +3473,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sMasquerainLevelUpLearnset,
         .teachableLearnset = sMasquerainTeachableLearnset,
+        .deltaHP = -5,
+        .deltaAttack = 15,
+        .deltaDefense = 3,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 8,
+        .deltaSpeed = 10,
     },
 #endif //P_FAMILY_SURSKIT
 
@@ -3342,6 +3564,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sShroomishTeachableLearnset,
         .eggMoveLearnset = sShroomishEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_BRELOOM}),
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 10,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 5,
     },
 
     [SPECIES_BRELOOM] =
@@ -3417,6 +3645,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sBreloomLevelUpLearnset,
         .teachableLearnset = sBreloomTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 10,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 5,
     },
 #endif //P_FAMILY_SHROOMISH
 
@@ -3491,6 +3725,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSlakothTeachableLearnset,
         .eggMoveLearnset = sSlakothEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_VIGOROTH}),
+        .deltaHP = 0,
+        .deltaAttack = -2,
+        .deltaDefense = -3,
+        .deltaSpAttack = -4,
+        .deltaSpDefense = -2,
+        .deltaSpeed = 10,
     },
 
     [SPECIES_VIGOROTH] =
@@ -3563,6 +3803,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sVigorothLevelUpLearnset,
         .teachableLearnset = sVigorothTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SLAKING}),
+        .deltaHP = 0,
+        .deltaAttack = -4,
+        .deltaDefense = -6,
+        .deltaSpAttack = -10,
+        .deltaSpDefense = -3,
+        .deltaSpeed = 10,
     },
 
     [SPECIES_SLAKING] =
@@ -3640,6 +3886,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sSlakingLevelUpLearnset,
         .teachableLearnset = sSlakingTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = -10,
+        .deltaDefense = -10,
+        .deltaSpAttack = -25,
+        .deltaSpDefense = -5,
+        .deltaSpeed = 10,
     },
 #endif //P_FAMILY_SLAKOTH
 
@@ -3719,6 +3971,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
                             #else
                                 {EVO_SPLIT_FROM_EVO, SPECIES_NINJASK, SPECIES_SHEDINJA}),
                             #endif
+        .deltaHP = -1,
+        .deltaAttack = 10,
+        .deltaDefense = 10,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_NINJASK] =
@@ -3802,6 +4060,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sNinjaskLevelUpLearnset,
         .teachableLearnset = sNinjaskTeachableLearnset,
+        .deltaHP = -1,
+        .deltaAttack = 10,
+        .deltaDefense = 10,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_SHEDINJA] =
@@ -3872,6 +4136,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sShedinjaLevelUpLearnset,
         .teachableLearnset = sShedinjaTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 10,
+        .deltaDefense = 0,
+        .deltaSpAttack = 40,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_NINCADA
 
@@ -3950,6 +4220,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sWhismurTeachableLearnset,
         .eggMoveLearnset = sWhismurEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LOUDRED}),
+        .deltaHP = 1,
+        .deltaAttack = -1,
+        .deltaDefense = 12,
+        .deltaSpAttack = 4,
+        .deltaSpDefense = 2,
+        .deltaSpeed = 2,
     },
 
     [SPECIES_LOUDRED] =
@@ -4020,6 +4296,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLoudredLevelUpLearnset,
         .teachableLearnset = sLoudredTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_EXPLOUD}),
+        .deltaHP = 1,
+        .deltaAttack = -1,
+        .deltaDefense = 12,
+        .deltaSpAttack = 4,
+        .deltaSpDefense = 2,
+        .deltaSpeed = 2,
     },
 
     [SPECIES_EXPLOUD] =
@@ -4095,6 +4377,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sExploudLevelUpLearnset,
         .teachableLearnset = sExploudTeachableLearnset,
+        .deltaHP = 1,
+        .deltaAttack = -1,
+        .deltaDefense = 12,
+        .deltaSpAttack = 4,
+        .deltaSpDefense = 2,
+        .deltaSpeed = 2,
     },
 #endif //P_FAMILY_WHISMUR
 
@@ -4173,6 +4461,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sMakuhitaTeachableLearnset,
         .eggMoveLearnset = sMakuhitaEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_HARIYAMA}),
+        .deltaHP = 1,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = -2,
     },
 
     [SPECIES_HARIYAMA] =
@@ -4242,6 +4536,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sHariyamaLevelUpLearnset,
         .teachableLearnset = sHariyamaTeachableLearnset,
+        .deltaHP = 1,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = -5,
     },
 #endif //P_FAMILY_MAKUHITA
 
@@ -4321,6 +4621,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_PROBOPASS, CONDITIONS({IF_IN_MAPSEC, MAPSEC_NEW_MAUVILLE})},
                                 {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_PROBOPASS}),
     #endif
+        .deltaHP = 0,
+        .deltaAttack = -3,
+        .deltaDefense = 5,
+        .deltaSpAttack = -3,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -4394,6 +4700,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sProbopassLevelUpLearnset,
         .teachableLearnset = sProbopassTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = -5,
+        .deltaDefense = 5,
+        .deltaSpAttack = -5,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_NOSEPASS
@@ -4470,6 +4782,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSkittyTeachableLearnset,
         .eggMoveLearnset = sSkittyEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_DELCATTY}),
+        .deltaHP = 5,
+        .deltaAttack = 15,
+        .deltaDefense = 10,
+        .deltaSpAttack = 25,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 25,
     },
 
     [SPECIES_DELCATTY] =
@@ -4548,6 +4866,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sDelcattyLevelUpLearnset,
         .teachableLearnset = sDelcattyTeachableLearnset,
+        .deltaHP = 5,
+        .deltaAttack = 15,
+        .deltaDefense = 10,
+        .deltaSpAttack = 25,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 25,
     },
 #endif //P_FAMILY_SKITTY
 
@@ -4628,6 +4952,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggMoveLearnset = sSableyeEggMoveLearnset,
         .formSpeciesIdTable = sSableyeFormSpeciesIdTable,
         .formChangeTable = sSableyeFormChangeTable,
+        .deltaHP = 10,
+        .deltaAttack = 20,
+        .deltaDefense = 25,
+        .deltaSpAttack = 25,
+        .deltaSpDefense = 25,
+        .deltaSpeed = 0,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -4783,6 +5113,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggMoveLearnset = sMawileEggMoveLearnset,
         .formSpeciesIdTable = sMawileFormSpeciesIdTable,
         .formChangeTable = sMawileFormChangeTable,
+        .deltaHP = 10,
+        .deltaAttack = 30,
+        .deltaDefense = 25,
+        .deltaSpAttack = 20,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 0,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -4929,6 +5265,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sAronTeachableLearnset,
         .eggMoveLearnset = sAronEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_LAIRON}),
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = -2,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 15,
+        .deltaSpeed = -6,
     },
 
     [SPECIES_LAIRON] =
@@ -5000,6 +5342,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLaironLevelUpLearnset,
         .teachableLearnset = sLaironTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_AGGRON}),
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = -4,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 15,
+        .deltaSpeed = -10,
     },
 
     [SPECIES_AGGRON] =
@@ -5076,6 +5424,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sAggronTeachableLearnset,
         .formSpeciesIdTable = sAggronFormSpeciesIdTable,
         .formChangeTable = sAggronFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = -5,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 15,
+        .deltaSpeed = -15,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -5231,6 +5585,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sMedititeTeachableLearnset,
         .eggMoveLearnset = sMedititeEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_MEDICHAM}),
+        .deltaHP = 10,
+        .deltaAttack = 10,
+        .deltaDefense = 25,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 25,
+        .deltaSpeed = 5,
     },
 
     [SPECIES_MEDICHAM] =
@@ -5317,6 +5677,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sMedichamTeachableLearnset,
         .formSpeciesIdTable = sMedichamFormSpeciesIdTable,
         .formChangeTable = sMedichamFormChangeTable,
+        .deltaHP = 10,
+        .deltaAttack = 10,
+        .deltaDefense = 25,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 25,
+        .deltaSpeed = 5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -5460,6 +5826,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sElectrikeTeachableLearnset,
         .eggMoveLearnset = sElectrikeEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_MANECTRIC}),
+        .deltaHP = 0,
+        .deltaAttack = 10,
+        .deltaDefense = 0,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 5,
     },
 
     [SPECIES_MANECTRIC] =
@@ -5531,6 +5903,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sManectricTeachableLearnset,
         .formSpeciesIdTable = sManectricFormSpeciesIdTable,
         .formChangeTable = sManectricFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 10,
+        .deltaDefense = 0,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -5677,6 +6055,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sPlusleLevelUpLearnset,
         .teachableLearnset = sPlusleTeachableLearnset,
         .eggMoveLearnset = sPlusleEggMoveLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 25,
+        .deltaDefense = 15,
+        .deltaSpAttack = 20,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_PLUSLE
 
@@ -5754,6 +6138,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sMinunLevelUpLearnset,
         .teachableLearnset = sMinunTeachableLearnset,
         .eggMoveLearnset = sMinunEggMoveLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 15,
+        .deltaDefense = 25,
+        .deltaSpAttack = 15,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_MINUN
 
@@ -5835,6 +6225,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sVolbeatLevelUpLearnset,
         .teachableLearnset = sVolbeatTeachableLearnset,
         .eggMoveLearnset = sVolbeatEggMoveLearnset,
+        .deltaHP = 5,
+        .deltaAttack = 2,
+        .deltaDefense = 0,
+        .deltaSpAttack = 53,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 5,
     },
 
     [SPECIES_ILLUMISE] =
@@ -5916,6 +6312,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sIllumiseLevelUpLearnset,
         .teachableLearnset = sIllumiseTeachableLearnset,
         .eggMoveLearnset = sIllumiseEggMoveLearnset,
+        .deltaHP = 15,
+        .deltaAttack = 28,
+        .deltaDefense = 35,
+        .deltaSpAttack = 2,
+        .deltaSpDefense = 20,
+        .deltaSpeed = -5,
     },
 #endif //P_FAMILY_VOLBEAT_ILLUMISE
 
@@ -5990,6 +6392,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sBudewTeachableLearnset,
         .eggMoveLearnset = sBudewEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_ROSELIA, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD},{IF_NOT_TIME, TIME_NIGHT})}),
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -6077,6 +6485,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #if P_GEN_4_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_ROSERADE}),
     #endif
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -6167,6 +6581,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sRoseradeLevelUpLearnset,
         .teachableLearnset = sRoseradeTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ROSELIA
@@ -6256,6 +6676,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sGulpinTeachableLearnset,
         .eggMoveLearnset = sGulpinEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_SWALOT}),
+        .deltaHP = 5,
+        .deltaAttack = 2,
+        .deltaDefense = 7,
+        .deltaSpAttack = 2,
+        .deltaSpDefense = 7,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_SWALOT] =
@@ -6339,6 +6765,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sSwalotLevelUpLearnset,
         .teachableLearnset = sSwalotTeachableLearnset,
+        .deltaHP = 5,
+        .deltaAttack = 2,
+        .deltaDefense = 7,
+        .deltaSpAttack = 2,
+        .deltaSpDefense = 7,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_GULPIN
 
@@ -6417,6 +6849,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sCarvanhaTeachableLearnset,
         .eggMoveLearnset = sCarvanhaEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SHARPEDO}),
+        .deltaHP = 15,
+        .deltaAttack = -3,
+        .deltaDefense = 15,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 15,
     },
 
     [SPECIES_SHARPEDO] =
@@ -6493,6 +6931,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSharpedoTeachableLearnset,
         .formSpeciesIdTable = sSharpedoFormSpeciesIdTable,
         .formChangeTable = sSharpedoFormChangeTable,
+        .deltaHP = 15,
+        .deltaAttack = -5,
+        .deltaDefense = 15,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 15,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -6640,6 +7084,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sWailmerTeachableLearnset,
         .eggMoveLearnset = sWailmerEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_WAILORD}),
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 10,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 10,
+        .deltaSpeed = -12,
     },
 
     [SPECIES_WAILORD] =
@@ -6708,6 +7158,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sWailordLevelUpLearnset,
         .teachableLearnset = sWailordTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 10,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 10,
+        .deltaSpeed = -15,
     },
 #endif //P_FAMILY_WAILMER
 
@@ -6798,6 +7254,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sNumelTeachableLearnset,
         .eggMoveLearnset = sNumelEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_CAMERUPT}),
+        .deltaHP = 5,
+        .deltaAttack = 15,
+        .deltaDefense = 20,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_CAMERUPT] =
@@ -6889,6 +7351,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sCameruptTeachableLearnset,
         .formSpeciesIdTable = sCameruptFormSpeciesIdTable,
         .formChangeTable = sCameruptFormChangeTable,
+        .deltaHP = 5,
+        .deltaAttack = 15,
+        .deltaDefense = 20,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 0,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -7037,6 +7505,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sTorkoalLevelUpLearnset,
         .teachableLearnset = sTorkoalTeachableLearnset,
         .eggMoveLearnset = sTorkoalEggMoveLearnset,
+        .deltaHP = 5,
+        .deltaAttack = 5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_TORKOAL
 
@@ -7116,6 +7590,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSpoinkTeachableLearnset,
         .eggMoveLearnset = sSpoinkEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GRUMPIG}),
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_GRUMPIG] =
@@ -7186,6 +7666,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sGrumpigLevelUpLearnset,
         .teachableLearnset = sGrumpigTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_SPOINK
 
@@ -7267,6 +7753,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSpindaLevelUpLearnset,
         .teachableLearnset = sSpindaTeachableLearnset,
         .eggMoveLearnset = sSpindaEggMoveLearnset,
+        .deltaHP = 20,
+        .deltaAttack = 20,
+        .deltaDefense = 25,
+        .deltaSpAttack = 20,
+        .deltaSpDefense = 25,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_SPINDA
 
@@ -7345,6 +7837,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sTrapinchTeachableLearnset,
         .eggMoveLearnset = sTrapinchEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VIBRAVA}),
+        .deltaHP = 10,
+        .deltaAttack = 10,
+        .deltaDefense = 5,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 5,
+        .deltaSpeed = -1,
     },
 
     [SPECIES_VIBRAVA] =
@@ -7422,6 +7920,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sVibravaLevelUpLearnset,
         .teachableLearnset = sVibravaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_FLYGON}),
+        .deltaHP = 15,
+        .deltaAttack = 5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 30,
+        .deltaSpDefense = 5,
+        .deltaSpeed = -5,
     },
 
     [SPECIES_FLYGON] =
@@ -7505,6 +8009,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sFlygonLevelUpLearnset,
         .teachableLearnset = sFlygonTeachableLearnset,
+        .deltaHP = 30,
+        .deltaAttack = 5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 30,
+        .deltaSpDefense = 5,
+        .deltaSpeed = -10,
     },
 #endif //P_FAMILY_TRAPINCH
 
@@ -7585,6 +8095,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sCacneaTeachableLearnset,
         .eggMoveLearnset = sCacneaEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_CACTURNE}),
+        .deltaHP = 10,
+        .deltaAttack = -6,
+        .deltaDefense = 20,
+        .deltaSpAttack = -6,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_CACTURNE] =
@@ -7667,6 +8183,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sCacturneLevelUpLearnset,
         .teachableLearnset = sCacturneTeachableLearnset,
+        .deltaHP = 10,
+        .deltaAttack = -10,
+        .deltaDefense = 20,
+        .deltaSpAttack = -10,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_CACNEA
 
@@ -7743,6 +8265,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSwabluTeachableLearnset,
         .eggMoveLearnset = sSwabluEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ALTARIA}),
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_ALTARIA] =
@@ -7815,6 +8343,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sAltariaTeachableLearnset,
         .formSpeciesIdTable = sAltariaFormSpeciesIdTable,
         .formChangeTable = sAltariaFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -7962,6 +8496,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sZangooseLevelUpLearnset,
         .teachableLearnset = sZangooseTeachableLearnset,
         .eggMoveLearnset = sZangooseEggMoveLearnset,
+        .deltaHP = 12,
+        .deltaAttack = 0,
+        .deltaDefense = 20,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_ZANGOOSE
 
@@ -8039,6 +8579,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSeviperLevelUpLearnset,
         .teachableLearnset = sSeviperTeachableLearnset,
         .eggMoveLearnset = sSeviperEggMoveLearnset,
+        .deltaHP = -3,
+        .deltaAttack = 0,
+        .deltaDefense = 10,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 45,
     },
 #endif //P_FAMILY_SEVIPER
 
@@ -8119,6 +8665,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sLunatoneLevelUpLearnset,
         .teachableLearnset = sLunatoneTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 20,
+        .deltaSpAttack = 15,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_LUNATONE
 
@@ -8199,6 +8751,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sSolrockLevelUpLearnset,
         .teachableLearnset = sSolrockTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 15,
+        .deltaDefense = 15,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_SOLROCK
 
@@ -8285,6 +8843,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sBarboachTeachableLearnset,
         .eggMoveLearnset = sBarboachEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_WHISCASH}),
+        .deltaHP = 0,
+        .deltaAttack = -2,
+        .deltaDefense = 17,
+        .deltaSpAttack = -1,
+        .deltaSpDefense = 19,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_WHISCASH] =
@@ -8366,6 +8930,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sWhiscashLevelUpLearnset,
         .teachableLearnset = sWhiscashTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = -3,
+        .deltaDefense = 17,
+        .deltaSpAttack = -1,
+        .deltaSpDefense = 19,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_BARBOACH
 
@@ -8441,6 +9011,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sCorphishTeachableLearnset,
         .eggMoveLearnset = sCorphishEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CRAWDAUNT}),
+        .deltaHP = 12,
+        .deltaAttack = 5,
+        .deltaDefense = 10,
+        .deltaSpAttack = 15,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_CRAWDAUNT] =
@@ -8510,6 +9086,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sCrawdauntLevelUpLearnset,
         .teachableLearnset = sCrawdauntTeachableLearnset,
+        .deltaHP = 12,
+        .deltaAttack = 5,
+        .deltaDefense = 10,
+        .deltaSpAttack = 15,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_CORPHISH
 
@@ -8586,6 +9168,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sBaltoyLevelUpLearnset,
         .teachableLearnset = sBaltoyTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CLAYDOL}),
+        .deltaHP = 0,
+        .deltaAttack = -2,
+        .deltaDefense = 5,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_CLAYDOL] =
@@ -8659,6 +9247,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sClaydolLevelUpLearnset,
         .teachableLearnset = sClaydolTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = -5,
+        .deltaDefense = 5,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_BALTOY
 
@@ -8739,6 +9333,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sLileepTeachableLearnset,
         .eggMoveLearnset = sLileepEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_CRADILY}),
+        .deltaHP = 4,
+        .deltaAttack = 4,
+        .deltaDefense = 13,
+        .deltaSpAttack = -1,
+        .deltaSpDefense = 3,
+        .deltaSpeed = -2,
     },
 
     [SPECIES_CRADILY] =
@@ -8817,6 +9417,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sCradilyLevelUpLearnset,
         .teachableLearnset = sCradilyTeachableLearnset,
+        .deltaHP = 4,
+        .deltaAttack = 4,
+        .deltaDefense = 13,
+        .deltaSpAttack = -1,
+        .deltaSpDefense = 3,
+        .deltaSpeed = -3,
     },
 #endif //P_FAMILY_LILEEP
 
@@ -8898,6 +9504,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sAnorithTeachableLearnset,
         .eggMoveLearnset = sAnorithEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ARMALDO}),
+        .deltaHP = 0,
+        .deltaAttack = -3,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 30,
     },
 
     [SPECIES_ARMALDO] =
@@ -8973,6 +9585,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sArmaldoLevelUpLearnset,
         .teachableLearnset = sArmaldoTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = -5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 25,
     },
 #endif //P_FAMILY_ANORITH
 
@@ -9054,6 +9672,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MILOTIC, CONDITIONS({IF_MIN_BEAUTY, 170})},
                                 {EVO_TRADE, 0, SPECIES_MILOTIC, CONDITIONS({IF_HOLD_ITEM, ITEM_PRISM_SCALE})},
                                 {EVO_ITEM, ITEM_PRISM_SCALE, SPECIES_MILOTIC}),
+        .deltaHP = 5,
+        .deltaAttack = -1,
+        .deltaDefense = 1,
+        .deltaSpAttack = -1,
+        .deltaSpDefense = 0,
+        .deltaSpeed = -1,
     },
 
     [SPECIES_MILOTIC] =
@@ -9143,6 +9767,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sMiloticLevelUpLearnset,
         .teachableLearnset = sMiloticTeachableLearnset,
+        .deltaHP = 5,
+        .deltaAttack = -10,
+        .deltaDefense = 1,
+        .deltaSpAttack = -5,
+        .deltaSpDefense = 0,
+        .deltaSpeed = -1,
     },
 #endif //P_FAMILY_FEEBAS
 
@@ -9224,6 +9854,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggMoveLearnset = sCastformEggMoveLearnset,
         .formSpeciesIdTable = sCastformFormSpeciesIdTable,
         .formChangeTable = sCastformFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 10,
+        .deltaDefense = 15,
+        .deltaSpAttack = 20,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 5,
     },
 
     [SPECIES_CASTFORM_SUNNY] =
@@ -9305,6 +9941,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggMoveLearnset = sCastformEggMoveLearnset,
         .formSpeciesIdTable = sCastformFormSpeciesIdTable,
         .formChangeTable = sCastformFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 10,
+        .deltaDefense = 15,
+        .deltaSpAttack = 20,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 5,
     },
 
     [SPECIES_CASTFORM_RAINY] =
@@ -9384,6 +10026,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggMoveLearnset = sCastformEggMoveLearnset,
         .formSpeciesIdTable = sCastformFormSpeciesIdTable,
         .formChangeTable = sCastformFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 10,
+        .deltaDefense = 15,
+        .deltaSpAttack = 20,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 5,
     },
 
     [SPECIES_CASTFORM_SNOWY] =
@@ -9463,6 +10111,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggMoveLearnset = sCastformEggMoveLearnset,
         .formSpeciesIdTable = sCastformFormSpeciesIdTable,
         .formChangeTable = sCastformFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 10,
+        .deltaDefense = 15,
+        .deltaSpAttack = 20,
+        .deltaSpDefense = 15,
+        .deltaSpeed = 5,
     },
 #endif //P_FAMILY_CASTFORM
 
@@ -9540,6 +10194,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sKecleonLevelUpLearnset,
         .teachableLearnset = sKecleonTeachableLearnset,
         .eggMoveLearnset = sKecleonEggMoveLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 10,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_KECLEON
 
@@ -9621,6 +10281,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sShuppetTeachableLearnset,
         .eggMoveLearnset = sShuppetEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_BANETTE}),
+        .deltaHP = 1,
+        .deltaAttack = -5,
+        .deltaDefense = 5,
+        .deltaSpAttack = -2,
+        .deltaSpDefense = 7,
+        .deltaSpeed = 30,
     },
 
     [SPECIES_BANETTE] =
@@ -9700,6 +10366,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sBanetteTeachableLearnset,
         .formSpeciesIdTable = sBanetteFormSpeciesIdTable,
         .formChangeTable = sBanetteFormChangeTable,
+        .deltaHP = 1,
+        .deltaAttack = -10,
+        .deltaDefense = 5,
+        .deltaSpAttack = -3,
+        .deltaSpDefense = 7,
+        .deltaSpeed = 30,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -9851,6 +10523,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sDuskullTeachableLearnset,
         .eggMoveLearnset = sDuskullEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_DUSCLOPS}),
+        .deltaHP = 5,
+        .deltaAttack = -3,
+        .deltaDefense = 0,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = -2,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_DUSCLOPS] =
@@ -9931,6 +10609,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_DUSKNOIR, CONDITIONS({IF_HOLD_ITEM, ITEM_REAPER_CLOTH})},
                                 {EVO_ITEM, ITEM_REAPER_CLOTH, SPECIES_DUSKNOIR}),
     #endif
+        .deltaHP = 5,
+        .deltaAttack = -7,
+        .deltaDefense = 0,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = -5,
+        .deltaSpeed = 0,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -10019,6 +10703,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sDusknoirLevelUpLearnset,
         .teachableLearnset = sDusknoirTeachableLearnset,
+        .deltaHP = 5,
+        .deltaAttack = -10,
+        .deltaDefense = 0,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = -5,
+        .deltaSpeed = 0,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DUSKULL
@@ -10096,6 +10786,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sTropiusLevelUpLearnset,
         .teachableLearnset = sTropiusTeachableLearnset,
         .eggMoveLearnset = sTropiusEggMoveLearnset,
+        .deltaHP = 1,
+        .deltaAttack = 22,
+        .deltaDefense = 17,
+        .deltaSpAttack = 8,
+        .deltaSpDefense = 23,
+        .deltaSpeed = -1,
     },
 #endif //P_FAMILY_TROPIUS
 
@@ -10174,6 +10870,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sChinglingTeachableLearnset,
         .eggMoveLearnset = sChinglingEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_CHIMECHO, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD},{IF_TIME, TIME_NIGHT})}),
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 20,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 10,
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -10258,6 +10960,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sChimechoLevelUpLearnset,
         .teachableLearnset = sChimechoTeachableLearnset,
         .eggMoveLearnset = sChimechoEggMoveLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 20,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 10,
     },
 #endif //P_FAMILY_CHIMECHO
 
@@ -10338,6 +11046,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggMoveLearnset = sAbsolEggMoveLearnset,
         .formSpeciesIdTable = sAbsolFormSpeciesIdTable,
         .formChangeTable = sAbsolFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 10,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -10493,6 +11207,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
                                 ,{EVO_ITEM, ITEM_DAWN_STONE, SPECIES_FROSLASS, CONDITIONS({IF_GENDER, MON_FEMALE})}
                             #endif
                             ),
+        .deltaHP = 5,
+        .deltaAttack = 5,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 5,
     },
 
     [SPECIES_GLALIE] =
@@ -10569,6 +11289,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sGlalieTeachableLearnset,
         .formSpeciesIdTable = sGlalieFormSpeciesIdTable,
         .formChangeTable = sGlalieFormChangeTable,
+        .deltaHP = 5,
+        .deltaAttack = 5,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 5,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -10710,6 +11436,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sFroslassTeachableLearnset,
         .formSpeciesIdTable = sFroslassFormSpeciesIdTable,
         .formChangeTable = sFroslassFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 30,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS
@@ -10867,6 +11599,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSphealTeachableLearnset,
         .eggMoveLearnset = sSphealEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SEALEO}),
+        .deltaHP = 5,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 10,
+        .deltaSpeed = -4,
     },
 
     [SPECIES_SEALEO] =
@@ -10941,6 +11679,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSealeoLevelUpLearnset,
         .teachableLearnset = sSealeoTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_WALREIN}),
+        .deltaHP = 5,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 10,
+        .deltaSpeed = -9,
     },
 
     [SPECIES_WALREIN] =
@@ -11020,6 +11764,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sWalreinLevelUpLearnset,
         .teachableLearnset = sWalreinTeachableLearnset,
+        .deltaHP = 5,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 10,
+        .deltaSpeed = -15,
     },
 #endif //P_FAMILY_SPHEAL
 
@@ -11098,6 +11848,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
                                 {EVO_TRADE, 0, SPECIES_GOREBYSS, CONDITIONS({IF_HOLD_ITEM, ITEM_DEEP_SEA_SCALE})},
                                 {EVO_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_HUNTAIL},
                                 {EVO_ITEM, ITEM_DEEP_SEA_SCALE, SPECIES_GOREBYSS}),
+        .deltaHP = 5,
+        .deltaAttack = 5,
+        .deltaDefense = 0,
+        .deltaSpAttack = 1,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_HUNTAIL] =
@@ -11169,6 +11925,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sHuntailLevelUpLearnset,
         .teachableLearnset = sHuntailTeachableLearnset,
+        .deltaHP = 5,
+        .deltaAttack = 10,
+        .deltaDefense = 0,
+        .deltaSpAttack = -8,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 28,
     },
 
     [SPECIES_GOREBYSS] =
@@ -11239,6 +12001,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sGorebyssLevelUpLearnset,
         .teachableLearnset = sGorebyssTeachableLearnset,
+        .deltaHP = 5,
+        .deltaAttack = 1,
+        .deltaDefense = 0,
+        .deltaSpAttack = 1,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 28,
     },
 #endif //P_FAMILY_CLAMPERL
 
@@ -11326,6 +12094,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sRelicanthLevelUpLearnset,
         .teachableLearnset = sRelicanthTeachableLearnset,
         .eggMoveLearnset = sRelicanthEggMoveLearnset,
+        .deltaHP = 10,
+        .deltaAttack = -5,
+        .deltaDefense = 10,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_RELICANTH
 
@@ -11399,6 +12173,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLuvdiscLevelUpLearnset,
         .teachableLearnset = sLuvdiscTeachableLearnset,
         .eggMoveLearnset = sLuvdiscEggMoveLearnset,
+        .deltaHP = 5,
+        .deltaAttack = 10,
+        .deltaDefense = 0,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_LUVDISC
 
@@ -11473,6 +12253,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sBagonTeachableLearnset,
         .eggMoveLearnset = sBagonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SHELGON}),
+        .deltaHP = 0,
+        .deltaAttack = -6,
+        .deltaDefense = -2,
+        .deltaSpAttack = -3,
+        .deltaSpDefense = -1,
+        .deltaSpeed = 25,
     },
 
     [SPECIES_SHELGON] =
@@ -11544,6 +12330,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sShelgonLevelUpLearnset,
         .teachableLearnset = sShelgonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_SALAMENCE}),
+        .deltaHP = 0,
+        .deltaAttack = -10,
+        .deltaDefense = -5,
+        .deltaSpAttack = -6,
+        .deltaSpDefense = -3,
+        .deltaSpeed = 25,
     },
 
     [SPECIES_SALAMENCE] =
@@ -11623,6 +12415,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSalamenceTeachableLearnset,
         .formSpeciesIdTable = sSalamenceFormSpeciesIdTable,
         .formChangeTable = sSalamenceFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = -12,
+        .deltaDefense = -5,
+        .deltaSpAttack = -15,
+        .deltaSpDefense = -5,
+        .deltaSpeed = 25,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -11693,6 +12491,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSalamenceTeachableLearnset,
         .formSpeciesIdTable = sSalamenceFormSpeciesIdTable,
         .formChangeTable = sSalamenceFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BAGON
@@ -11769,6 +12573,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sBeldumLevelUpLearnset,
         .teachableLearnset = sBeldumTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_METANG}),
+        .deltaHP = 0,
+        .deltaAttack = -4,
+        .deltaDefense = -4,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_METANG] =
@@ -11840,6 +12650,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sMetangLevelUpLearnset,
         .teachableLearnset = sMetangTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_METAGROSS}),
+        .deltaHP = 0,
+        .deltaAttack = -6,
+        .deltaDefense = -6,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_METAGROSS] =
@@ -11918,6 +12734,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sMetagrossTeachableLearnset,
         .formSpeciesIdTable = sMetagrossFormSpeciesIdTable,
         .formChangeTable = sMetagrossFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = -15,
+        .deltaDefense = -10,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -12069,6 +12891,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sRegirockLevelUpLearnset,
         .teachableLearnset = sRegirockTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_REGIROCK
 
@@ -12148,6 +12976,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sRegiceLevelUpLearnset,
         .teachableLearnset = sRegiceTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_REGICE
 
@@ -12228,6 +13062,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sRegisteelLevelUpLearnset,
         .teachableLearnset = sRegisteelTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_REGISTEEL
 
@@ -12310,6 +13150,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sLatiasTeachableLearnset,
         .formSpeciesIdTable = sLatiasFormSpeciesIdTable,
         .formChangeTable = sLatiasFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -12465,6 +13311,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sLatiosTeachableLearnset,
         .formSpeciesIdTable = sLatiosFormSpeciesIdTable,
         .formChangeTable = sLatiosFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -12621,6 +13473,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sKyogreTeachableLearnset,
         .formSpeciesIdTable = sKyogreFormSpeciesIdTable,
         .formChangeTable = sKyogreFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #if P_PRIMAL_REVERSIONS
     [SPECIES_KYOGRE_PRIMAL] =
@@ -12775,6 +13633,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sGroudonTeachableLearnset,
         .formSpeciesIdTable = sGroudonFormSpeciesIdTable,
         .formChangeTable = sGroudonFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
 #if P_PRIMAL_REVERSIONS
@@ -12933,6 +13797,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sRayquazaTeachableLearnset,
         .formSpeciesIdTable = sRayquazaFormSpeciesIdTable,
         .formChangeTable = sRayquazaFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -13096,6 +13966,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sJirachiLevelUpLearnset,
         .teachableLearnset = sJirachiTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_JIRACHI
 
@@ -13183,6 +14059,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sDeoxysNormalTeachableLearnset,
         .formSpeciesIdTable = sDeoxysFormSpeciesIdTable,
         .formChangeTable = sDeoxysNormalFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_DEOXYS_ATTACK] =
@@ -13258,6 +14140,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sDeoxysAttackTeachableLearnset,
         .formSpeciesIdTable = sDeoxysFormSpeciesIdTable,
         .formChangeTable = sDeoxysAttackFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_DEOXYS_DEFENSE] =
@@ -13334,6 +14222,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sDeoxysDefenseTeachableLearnset,
         .formSpeciesIdTable = sDeoxysFormSpeciesIdTable,
         .formChangeTable = sDeoxysDefenseFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_DEOXYS_SPEED] =
@@ -13410,6 +14304,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sDeoxysSpeedTeachableLearnset,
         .formSpeciesIdTable = sDeoxysFormSpeciesIdTable,
         .formChangeTable = sDeoxysSpeedFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_DEOXYS
 

@@ -2775,6 +2775,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sDrilburTeachableLearnset,
         .eggMoveLearnset = sDrilburEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_EXCADRILL}),
+        .deltaHP = 0,
+        .deltaAttack = -5,
+        .deltaDefense = 10,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = -4,
     },
 
     [SPECIES_EXCADRILL] =
@@ -2846,6 +2852,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sExcadrillTeachableLearnset,
         .formSpeciesIdTable = sExcadrillFormSpeciesIdTable,
         .formChangeTable = sExcadrillFormChangeTable,
+        .deltaHP = 0,
+        .deltaAttack = -10,
+        .deltaDefense = 10,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = -8,
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS
@@ -4255,6 +4267,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sCottoneeTeachableLearnset,
         .eggMoveLearnset = sCottoneeEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_WHIMSICOTT}),
+        .deltaHP = 10,
+        .deltaAttack = -1,
+        .deltaDefense = 5,
+        .deltaSpAttack = 3,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 4,
     },
 
     [SPECIES_WHIMSICOTT] =
@@ -4323,6 +4341,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sWhimsicottLevelUpLearnset,
         .teachableLearnset = sWhimsicottTeachableLearnset,
+        .deltaHP = 10,
+        .deltaAttack = -2,
+        .deltaDefense = 5,
+        .deltaSpAttack = 3,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 4,
     },
 #endif //P_FAMILY_COTTONEE
 
@@ -4399,6 +4423,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggMoveLearnset = sPetililEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT, CONDITIONS({IF_NOT_REGION, REGION_HISUI})},
                                 {EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT_HISUI, CONDITIONS({IF_REGION, REGION_HISUI})}),
+        .deltaHP = 15,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 5,
+        .deltaSpeed = -4,
     },
 
     [SPECIES_LILLIGANT] =
@@ -4469,6 +4499,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sLilligantLevelUpLearnset,
         .teachableLearnset = sLilligantTeachableLearnset,
         .formSpeciesIdTable = sLilligantFormSpeciesIdTable,
+        .deltaHP = 15,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 10,
+        .deltaSpDefense = 5,
+        .deltaSpeed = -20,
     },
 
 #if P_HISUIAN_FORMS
@@ -4947,6 +4983,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sSandileTeachableLearnset,
         .eggMoveLearnset = sSandileEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_KROKOROK}),
+        .deltaHP = 0,
+        .deltaAttack = -1,
+        .deltaDefense = 5,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 3,
     },
 
     [SPECIES_KROKOROK] =
@@ -5015,6 +5057,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sKrokorokLevelUpLearnset,
         .teachableLearnset = sKrokorokTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_KROOKODILE}),
+        .deltaHP = 0,
+        .deltaAttack = -1,
+        .deltaDefense = 5,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 3,
     },
 
     [SPECIES_KROOKODILE] =
@@ -5091,6 +5139,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sKrookodileLevelUpLearnset,
         .teachableLearnset = sKrookodileTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = -2,
+        .deltaDefense = 5,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 3,
     },
 #endif //P_FAMILY_SANDILE
 
@@ -5636,6 +5690,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sDwebbleTeachableLearnset,
         .eggMoveLearnset = sDwebbleEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_CRUSTLE}),
+        .deltaHP = 5,
+        .deltaAttack = -1,
+        .deltaDefense = 8,
+        .deltaSpAttack = 4,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_CRUSTLE] =
@@ -5707,6 +5767,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sCrustleLevelUpLearnset,
         .teachableLearnset = sCrustleTeachableLearnset,
+        .deltaHP = 5,
+        .deltaAttack = -2,
+        .deltaDefense = 8,
+        .deltaSpAttack = 4,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_DWEBBLE
 
@@ -8965,6 +9031,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sFrillishTeachableLearnset,
         .eggMoveLearnset = sFrillishEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_JELLICENT}),
+        .deltaHP = 10,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 6,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_JELLICENT] =
@@ -9053,6 +9125,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sJellicentLevelUpLearnset,
         .teachableLearnset = sJellicentTeachableLearnset,
+        .deltaHP = 10,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 6,
+        .deltaSpDefense = 10,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_FRILLISH
 
@@ -9123,6 +9201,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sAlomomolaLevelUpLearnset,
         .teachableLearnset = sAlomomolaTeachableLearnset,
         .eggMoveLearnset = sAlomomolaEggMoveLearnset,
+        .deltaHP = 10,
+        .deltaAttack = 5,
+        .deltaDefense = 10,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 20,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_ALOMOMOLA
 

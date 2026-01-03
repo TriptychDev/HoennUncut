@@ -3326,6 +3326,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .eggMoveLearnset = sSpritzeeEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_AROMATISSE, CONDITIONS({IF_HOLD_ITEM, ITEM_SACHET})},
                                 {EVO_ITEM, ITEM_SACHET, SPECIES_AROMATISSE}),
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_AROMATISSE] =
@@ -3392,6 +3398,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sAromatisseLevelUpLearnset,
         .teachableLearnset = sAromatisseTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 0,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 0,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_SPRITZEE
 
@@ -3468,6 +3480,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .eggMoveLearnset = sSwirlixEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_SLURPUFF, CONDITIONS({IF_HOLD_ITEM, ITEM_WHIPPED_DREAM})},
                                 {EVO_ITEM, ITEM_WHIPPED_DREAM, SPECIES_SLURPUFF}),
+        .deltaHP = 4,
+        .deltaAttack = -2,
+        .deltaDefense = 3,
+        .deltaSpAttack = 6,
+        .deltaSpDefense = 1,
+        .deltaSpeed = 16,
     },
 
     [SPECIES_SLURPUFF] =
@@ -3537,6 +3555,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sSlurpuffLevelUpLearnset,
         .teachableLearnset = sSlurpuffTeachableLearnset,
+        .deltaHP = 4,
+        .deltaAttack = -2,
+        .deltaDefense = 3,
+        .deltaSpAttack = 6,
+        .deltaSpDefense = 1,
+        .deltaSpeed = 16,
     },
 #endif //P_FAMILY_SWIRLIX
 
@@ -3610,6 +3634,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sInkayTeachableLearnset,
         .eggMoveLearnset = sInkayEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MALAMAR}),
+        .deltaHP = -1,
+        .deltaAttack = 3,
+        .deltaDefense = 2,
+        .deltaSpAttack = 12,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 2,
     },
 
     [SPECIES_MALAMAR] =
@@ -3680,6 +3710,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sMalamarTeachableLearnset,
         .formSpeciesIdTable = sMalamarFormSpeciesIdTable,
         .formChangeTable = sMalamarFormChangeTable,
+        .deltaHP = -1,
+        .deltaAttack = 3,
+        .deltaDefense = 2,
+        .deltaSpAttack = 12,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 2,
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS

@@ -2364,6 +2364,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sCombeeLevelUpLearnset,
         .teachableLearnset = sCombeeTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_VESPIQUEN, CONDITIONS({IF_GENDER, MON_FEMALE})}),
+        .deltaHP = 10,
+        .deltaAttack = 0,
+        .deltaDefense = 3,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 3,
+        .deltaSpeed = 10,
     },
 
     [SPECIES_VESPIQUEN] =
@@ -2440,6 +2446,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sVespiquenLevelUpLearnset,
         .teachableLearnset = sVespiquenTeachableLearnset,
+        .deltaHP = 10,
+        .deltaAttack = 0,
+        .deltaDefense = 3,
+        .deltaSpAttack = 0,
+        .deltaSpDefense = 3,
+        .deltaSpeed = 10,
     },
 #endif //P_FAMILY_COMBEE
 
@@ -2972,6 +2984,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggMoveLearnset = sShellosEggMoveLearnset,
         .formSpeciesIdTable = sShellosFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GASTRODON_WEST}),
+        .deltaHP = 4,
+        .deltaAttack = -2,
+        .deltaDefense = 22,
+        .deltaSpAttack = 8,
+        .deltaSpDefense = 3,
+        .deltaSpeed = 1,
     },
 
     [SPECIES_SHELLOS_EAST] =
@@ -3038,6 +3056,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggMoveLearnset = sShellosEggMoveLearnset,
         .formSpeciesIdTable = sShellosFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GASTRODON_EAST}),
+        .deltaHP = 4,
+        .deltaAttack = -2,
+        .deltaDefense = 22,
+        .deltaSpAttack = 8,
+        .deltaSpDefense = 3,
+        .deltaSpeed = 1,
     },
 
     [SPECIES_GASTRODON_WEST] =
@@ -3102,6 +3126,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sGastrodonLevelUpLearnset,
         .teachableLearnset = sGastrodonTeachableLearnset,
         .formSpeciesIdTable = sGastrodonFormSpeciesIdTable,
+        .deltaHP = 4,
+        .deltaAttack = -3,
+        .deltaDefense = 22,
+        .deltaSpAttack = 8,
+        .deltaSpDefense = 3,
+        .deltaSpeed = 1,
     },
 
     [SPECIES_GASTRODON_EAST] =
@@ -3166,6 +3196,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sGastrodonLevelUpLearnset,
         .teachableLearnset = sGastrodonTeachableLearnset,
         .formSpeciesIdTable = sGastrodonFormSpeciesIdTable,
+        .deltaHP = 4,
+        .deltaAttack = -3,
+        .deltaDefense = 22,
+        .deltaSpAttack = 8,
+        .deltaSpDefense = 3,
+        .deltaSpeed = 1,
     },
 #endif //P_FAMILY_SHELLOS
 
@@ -4727,6 +4763,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sHippopotasTeachableLearnset,
         .eggMoveLearnset = sHippopotasEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_HIPPOWDON}),
+        .deltaHP = 2,
+        .deltaAttack = -1,
+        .deltaDefense = 2,
+        .deltaSpAttack = -2,
+        .deltaSpDefense = -3,
+        .deltaSpeed = 3,
     },
 
     [SPECIES_HIPPOWDON] =
@@ -4805,6 +4847,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sHippowdonLevelUpLearnset,
         .teachableLearnset = sHippowdonTeachableLearnset,
+        .deltaHP = 2,
+        .deltaAttack = -2,
+        .deltaDefense = 2,
+        .deltaSpAttack = -3,
+        .deltaSpDefense = -7,
+        .deltaSpeed = 3,
     },
 #endif //P_FAMILY_HIPPOPOTAS
 
@@ -4890,6 +4938,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sSkorupiTeachableLearnset,
         .eggMoveLearnset = sSkorupiEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DRAPION}),
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_DRAPION] =
@@ -4964,6 +5018,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sDrapionLevelUpLearnset,
         .teachableLearnset = sDrapionTeachableLearnset,
+        .deltaHP = 0,
+        .deltaAttack = 0,
+        .deltaDefense = 5,
+        .deltaSpAttack = 5,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_SKORUPI
 
@@ -5050,6 +5110,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sCroagunkTeachableLearnset,
         .eggMoveLearnset = sCroagunkEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_TOXICROAK}),
+        .deltaHP = 2,
+        .deltaAttack = -1,
+        .deltaDefense = 5,
+        .deltaSpAttack = 4,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 
     [SPECIES_TOXICROAK] =
@@ -5133,6 +5199,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sToxicroakLevelUpLearnset,
         .teachableLearnset = sToxicroakTeachableLearnset,
+        .deltaHP = 2,
+        .deltaAttack = -1,
+        .deltaDefense = 5,
+        .deltaSpAttack = 4,
+        .deltaSpDefense = 5,
+        .deltaSpeed = 0,
     },
 #endif //P_FAMILY_CROAGUNK
 
@@ -5302,6 +5374,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sFinneonTeachableLearnset,
         .eggMoveLearnset = sFinneonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_LUMINEON}),
+        .deltaHP = 11,
+        .deltaAttack = 1,
+        .deltaDefense = 10,
+        .deltaSpAttack = 11,
+        .deltaSpDefense = 14,
+        .deltaSpeed = -1,
     },
 
     [SPECIES_LUMINEON] =
@@ -5385,6 +5463,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sLumineonLevelUpLearnset,
         .teachableLearnset = sLumineonTeachableLearnset,
+        .deltaHP = 11,
+        .deltaAttack = 1,
+        .deltaDefense = 10,
+        .deltaSpAttack = 11,
+        .deltaSpDefense = 14,
+        .deltaSpeed = -1,
     },
 #endif //P_FAMILY_FINNEON
 

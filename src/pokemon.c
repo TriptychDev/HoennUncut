@@ -1642,19 +1642,41 @@ void CalculateMonStats(struct Pokemon *mon)
     s32 oldMaxHP = GetMonData(mon, MON_DATA_MAX_HP, NULL);
     s32 currentHP = GetMonData(mon, MON_DATA_HP, NULL);
     u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
-    u8 friendship = GetMonData(mon, MON_DATA_FRIENDSHIP, NULL);
+    //u8 friendship = GetMonData(mon, MON_DATA_FRIENDSHIP, NULL);
     s32 level = GetLevelFromMonExp(mon);
     s32 newMaxHP;
 
-    u8 nature = GetMonData(mon, MON_DATA_HIDDEN_NATURE, NULL);
+    //u8 nature = GetMonData(mon, MON_DATA_HIDDEN_NATURE, NULL);
 
     SetMonData(mon, MON_DATA_LEVEL, &level);
 
-    bool32 hyperTrained[NUM_STATS]; //In a battle test, hyper training flag indicates a fixed stat
-    s32 iv[NUM_STATS];
-    s32 ev[NUM_STATS];
+    //bool32 hyperTrained[NUM_STATS]; //In a battle test, hyper training flag indicates a fixed stat
+    //s32 iv[NUM_STATS];
+    //s32 ev[NUM_STATS];
     for (u32 i = 0; i < NUM_STATS; i++)
     {
+    /*
+        CHANGE: Stat Calculation - Removed EVs/IVs and added Delta Stats
+        REASON: Switching to Delta system to allow stat buffs as part of BST rebalancing.
+                Deltas scale by level to prevent early game mons from becoming terrors (for example, Beedrill doesn't have a 480 BST until level 50).
+                If a Delta is 5 or less (including negative values), or the Pokemon is greater than level 70, the entirety of the delta is applied.
+                Otherwise, the first 5 points of the Delta are applied, and the remainder are scaled over 70 levels.
+    */
+        if (i == STAT_HP)
+            continue;
+
+        u8 baseStat = GetSpeciesBaseStat(species, i);
+        s8 deltaStat = GetSpeciesDeltaStat(species, i);
+        s32 n = 0;
+
+        if (deltaStat <= 5 || level >69 )
+            n = ( ( ( 2 * ( baseStat + deltaStat ) ) * level) / 100) + 5;
+        else
+            n = ( ( ( 2 * ( baseStat + 5 + ( (deltaStat - 5) * level ) / 70 ) ) * level) / 100) + 5;
+
+        SetMonData(mon, MON_DATA_MAX_HP + i, &n);
+
+        /* Old Stat Calculation preserved for reference
         hyperTrained[i] = GetMonData(mon, MON_DATA_HYPER_TRAINED_HP + i);
         iv[i] = GetMonData(mon, MON_DATA_HP_IV + i);
         ev[i] = GetMonData(mon, MON_DATA_HP_EV + i);
@@ -1676,13 +1698,16 @@ void CalculateMonStats(struct Pokemon *mon)
         n = ModifyStatByNature(nature, n, i);
         if (B_FRIENDSHIP_BOOST == TRUE)
             n = n + ((n * 10 * friendship) / (MAX_FRIENDSHIP * 100));
+
         SetMonData(mon, MON_DATA_MAX_HP + i, &n);
+        */
     }
 
-#if TESTING
+/* #if TESTING
     if (hyperTrained[STAT_HP] && gMain.inBattle)
         return;
 #endif
+*/
 
     if (species == SPECIES_SHEDINJA)
     {
@@ -1690,8 +1715,22 @@ void CalculateMonStats(struct Pokemon *mon)
     }
     else
     {
+        u8 baseHP = GetSpeciesBaseHP(species);
+        s8 deltaHP = GetSpeciesDeltaHP(species);
+
+        if (deltaHP <= 5 || level >69 )
+            {
+                newMaxHP = ((( 2 * ( baseHP + deltaHP ) ) * level ) / 100) + level + 10;
+            }
+        else
+            {
+                newMaxHP = ((( 2 * ( baseHP + 5 + ( (deltaHP - 5) * level ) / 70 ) ) * level ) / 100) + level + 10;
+            }
+
+        /* Old Stat Calculation preserved for reference
         s32 n = 2 * GetSpeciesBaseHP(species) + iv[STAT_HP];
         newMaxHP = (((n + ev[STAT_HP] / 4) * level) / 100) + level + 10;
+        */
     }
 
     gBattleScripting.levelUpHP = newMaxHP - oldMaxHP;
@@ -3547,6 +3586,56 @@ u32 GetSpeciesBaseStat(u16 species, u32 statIndex)
         return GetSpeciesBaseSpAttack(species);
     case STAT_SPDEF:
         return GetSpeciesBaseSpDefense(species);
+    }
+    return 0;
+}
+
+u32 GetSpeciesDeltaHP(u16 species)
+{
+    return gSpeciesInfo[SanitizeSpeciesId(species)].deltaHP;
+}
+
+u32 GetSpeciesDeltaAttack(u16 species)
+{
+    return gSpeciesInfo[SanitizeSpeciesId(species)].deltaAttack;
+}
+
+u32 GetSpeciesDeltaDefense(u16 species)
+{
+    return gSpeciesInfo[SanitizeSpeciesId(species)].deltaDefense;
+}
+
+u32 GetSpeciesDeltaSpAttack(u16 species)
+{
+    return gSpeciesInfo[SanitizeSpeciesId(species)].deltaSpAttack;
+}
+
+u32 GetSpeciesDeltaSpDefense(u16 species)
+{
+    return gSpeciesInfo[SanitizeSpeciesId(species)].deltaSpDefense;
+}
+
+u32 GetSpeciesDeltaSpeed(u16 species)
+{
+    return gSpeciesInfo[SanitizeSpeciesId(species)].deltaSpeed;
+}
+
+u32 GetSpeciesDeltaStat(u16 species, u32 statIndex)
+{
+    switch (statIndex)
+    {
+    case STAT_HP:
+        return GetSpeciesDeltaHP(species);
+    case STAT_ATK:
+        return GetSpeciesDeltaAttack(species);
+    case STAT_DEF:
+        return GetSpeciesDeltaDefense(species);
+    case STAT_SPEED:
+        return GetSpeciesDeltaSpeed(species);
+    case STAT_SPATK:
+        return GetSpeciesDeltaSpAttack(species);
+    case STAT_SPDEF:
+        return GetSpeciesDeltaSpDefense(species);
     }
     return 0;
 }
